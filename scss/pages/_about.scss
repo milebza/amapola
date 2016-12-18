@@ -1,0 +1,22 @@
+/* ABOUT */
+
+.about {
+    @include section;
+    background-color: $main-white;
+    
+    .about__content {
+        line-height: 1.1em;
+        font-size: 1.1em;
+        
+        h1 {
+            @include title;
+            margin-bottom: 40px;
+        }
+        
+        .about__content--picture {
+        }
+        
+        .about__content--text {
+        }
+    }
+}

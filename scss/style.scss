@@ -1,77 +1,27 @@
 /* CUSTOM STYLE */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-$hero__image: "/assets/background01.jpg";
-$main-white: rgb(255, 255, 255);
-$header__font-size: 22px;
-$header-height: 50px;
+/* Utils */
+@import 'utils/variables';
+@import 'utils/mixins';
 
-.clearfix {
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-    
-    &:after {
-    clear: both;
-    }
-}
+/* Layout */
+@import 'layout/header';
+@import 'layout/footer';
+
+/* Pages */
+@import 'pages/hero';
+@import 'pages/about';
+@import 'pages/projects';
+@import 'pages/contact';
 
 body {
-    //background-color: antiquewhite;
-    
     background: url($hero__image) no-repeat;
     background-size:cover;
-    //height: 800px;
+    background-attachment: fixed;
+    background-position: top center;
     
     font : {
         family: Roboto, sans-serif;
         weight: 300;
     }
-}
-
-.header {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    background-color: $main-white;
-    font-size: $header__font-size;
-    line-height: $header__font-size * 2;
-    height: $header-height;
-    padding: 0 20px;
-        
-    .header__nav {
-        ul {
-            float: right;
-            
-            li {
-                display: inline;
-                margin: 0 10px;
-
-                a:link {
-                    text-decoration: none;
-                    color: black;
-                }
-                a:visited {
-                    color: black;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                a:active {
-                    background-color: $main-white;
-                    color: black;
-                }
-            }
-        }
-    }    
-}
-
-.hero {
-    //margin-top: $header-height;
-    
-//    background: url($hero__image) no-repeat;
-//    background-size:cover;
-//    height: 800px;
 }

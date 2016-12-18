@@ -1,0 +1,35 @@
+/* CONTACT */
+
+.contact {
+    @include section;
+    @include flex-box-center;
+    background-color: $main-white;
+    height: 400px;
+    
+    .contact__content {
+        line-height: 1.1em;
+        font-size: 1.1em;
+        
+        h1 {
+            @include title;
+            margin-bottom: 40px;
+        }
+        
+        .contact__content--last-p {
+            font-style: italic;
+            margin-bottom: 60px;
+        }
+        
+        ul li {
+            display: inline;
+            
+            a {
+               color: $main-black; 
+            }
+            
+            a:hover {
+                color: $dark-grey-blue;
+            }
+        }
+    }
+}

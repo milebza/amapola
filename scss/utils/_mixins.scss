@@ -1,0 +1,33 @@
+/* Mixins */
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin title() {
+    font: {
+        size: 1.4em;
+    }
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+}
+
+@mixin section() {
+    width: 100%;
+    text-align: center;
+}
+
+@mixin flex-box-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
