@@ -79,10 +79,10 @@
     padding: 30px 20px 30px;
     margin: 0 15px;
     text-align: center; }
-    .hero .hero__content .hero__content--title {
+    .hero .hero__content .hero__content__title {
       font-size: 1.7em;
       margin-bottom: 30px; }
-    .hero .hero__content .hero__content--text {
+    .hero .hero__content .hero__content__text {
       font-size: 1.3em;
       line-height: 1.3em; }
 
