@@ -14,7 +14,9 @@
 @import 'pages/projects';
 @import 'pages/contact';
 
-body {
+.container {
+    width: 100%;
+    height: 100%;
     background: url($hero__image) no-repeat;
     background-size:cover;
     -webkit-background-size: cover;
@@ -22,8 +24,6 @@ body {
 	-o-background-size: cover;
     background-attachment: fixed;
     background-position: top center;
-    width: 100%;
-    height: 100%;
     
     font : {
         family: Roboto, sans-serif;
