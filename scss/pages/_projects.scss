@@ -5,7 +5,7 @@
     @include flex-box-center;
     height: 500px;
     
-    .projects__content {
+    &__content {
         line-height: 1.1em;
         font-size: 1.1em;
         

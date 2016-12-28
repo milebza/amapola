@@ -6,7 +6,7 @@
     background-color: $main-white;
     height: 400px;
     
-    .contact__content {
+    &__content {
         line-height: 1.1em;
         font-size: 1.1em;
         
@@ -15,8 +15,7 @@
             margin-bottom: 40px;
         }
         
-        .contact__content--last-p {
-            font-style: italic;
+        &--last-p {
             margin-bottom: 60px;
         }
         

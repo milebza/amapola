@@ -19,7 +19,7 @@
   font-size: 22px;
   line-height: 50px;
   padding: 0 20px 0 0; }
-  .header .header__nav a.header__author {
+  .header .header__nav a.header__nav__author {
     font-family: Noto serif, serif;
     font-weight: 400;
     font-size: 26px;
@@ -29,31 +29,39 @@
     padding: 0 7px 0 7px;
     text-align: center;
     text-decoration: none; }
-  .header .header__nav a.header__author:hover {
+  .header .header__nav a.header__nav__author:hover {
     color: white;
     background-color: black;
     transition: 300ms; }
-  .header .header__nav a.header__author:active {
+  .header .header__nav a.header__nav__author:active {
     background-color: white;
     color: black; }
-  .header .header__nav ul {
+  .header .header__nav__menu {
     float: right; }
-    .header .header__nav ul li {
+    .header .header__nav__menu ul li {
       display: inline;
       margin: 0 5px;
       padding: 10px; }
-      .header .header__nav ul li a:link {
+      .header .header__nav__menu ul li a:link {
         text-decoration: none;
         color: black;
         border-bottom: solid 2px transparent;
         transition: 300ms; }
-      .header .header__nav ul li a:visited {
+      .header .header__nav__menu ul li a:visited {
         color: black; }
-      .header .header__nav ul li a:hover {
+      .header .header__nav__menu ul li a:hover {
         border-bottom: solid 2px black; }
-      .header .header__nav ul li a:active {
+      .header .header__nav__menu ul li a:active {
         background-color: white;
         color: black; }
+    .header .header__nav__menu--toggle {
+      display: none; }
+
+@media screen and (max-width: 680px) {
+  .header__nav__menu__links {
+    display: none; }
+  .header__nav__menu--toggle {
+    display: block; } }
 
 /* FOOTER */
 .footer {
@@ -73,16 +81,16 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .hero .hero__content {
+  .hero__content {
     width: 800px;
     border: solid 2px transparent;
     padding: 30px 20px 30px;
     margin: 0 15px;
     text-align: center; }
-    .hero .hero__content .hero__content__title {
+    .hero__content__title {
       font-size: 1.7em;
       margin-bottom: 30px; }
-    .hero .hero__content .hero__content__text {
+    .hero__content__text {
       font-size: 1.3em;
       line-height: 1.3em; }
 
@@ -91,10 +99,10 @@
   width: 100%;
   text-align: center;
   background-color: white; }
-  .about .about__content {
+  .about__content {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .about .about__content h1 {
+    .about__content h1 {
       font-size: 1.4em;
       text-align: center;
       text-transform: uppercase;
@@ -108,10 +116,10 @@
   align-items: center;
   justify-content: center;
   height: 500px; }
-  .projects .projects__content {
+  .projects__content {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .projects .projects__content h1 {
+    .projects__content h1 {
       font-size: 1.4em;
       text-align: center;
       text-transform: uppercase;
@@ -126,27 +134,29 @@
   justify-content: center;
   background-color: white;
   height: 400px; }
-  .contact .contact__content {
+  .contact__content {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .contact .contact__content h1 {
+    .contact__content h1 {
       font-size: 1.4em;
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 40px; }
-    .contact .contact__content .contact__content--last-p {
-      font-style: italic;
+    .contact__content--last-p {
       margin-bottom: 60px; }
-    .contact .contact__content ul li {
+    .contact__content ul li {
       display: inline; }
-      .contact .contact__content ul li a {
+      .contact__content ul li a {
         color: black; }
-      .contact .contact__content ul li a:hover {
+      .contact__content ul li a:hover {
         color: #3e7e89; }
 
 body {
   background: url("/assets/background02.jpg") no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   width: 100%;

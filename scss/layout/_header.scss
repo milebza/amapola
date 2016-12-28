@@ -11,7 +11,7 @@
     padding: 0 20px 0 0;
         
     .header__nav {
-        a.header__author {
+        a.header__nav__author {
             font: {
                 family: Noto serif, serif;
                 weight: 400;
@@ -25,42 +25,59 @@
             text-decoration: none;
         }
         
-        a.header__author:hover {
+        a.header__nav__author:hover {
             color: $main-white;
             background-color: $main-black;
             transition: 300ms;
         }
 
-        a.header__author:active {
+        a.header__nav__author:active {
             background-color: $main-white;
             color: $main-black;
         }
-
-        ul {
+        
+        &__menu {
             float: right;
-            
-            li {
-                display: inline;
-                margin: 0 5px;
-                padding: 10px;
 
-                a:link {
-                    text-decoration: none;
-                    color: $main-black;
-                    border-bottom: solid 2px transparent;
-                    transition: 300ms;
+            ul {
+
+                li {
+                    display: inline;
+                    margin: 0 5px;
+                    padding: 10px;
+
+                    a:link {
+                        text-decoration: none;
+                        color: $main-black;
+                        border-bottom: solid 2px transparent;
+                        transition: 300ms;
+                    }
+                    a:visited {
+                        color: $main-black;
+                    }
+                    a:hover {
+                        border-bottom: solid 2px $main-black;
+                    }
+                    a:active {
+                        background-color: $main-white;
+                        color: $main-black;
+                    }
                 }
-                a:visited {
-                    color: $main-black;
-                }
-                a:hover {
-                    border-bottom: solid 2px $main-black;
-                }
-                a:active {
-                    background-color: $main-white;
-                    color: $main-black;
-                }
+            }
+
+            &--toggle {
+                display: none;
             }
         }
     }    
+}
+
+@media screen and (max-width:680px) {
+    .header__nav__menu__links {
+        display: none;
+    }
+    
+    .header__nav__menu--toggle {
+        display: block;
+    }
 }

@@ -4,7 +4,7 @@
     @include section;
     background-color: $main-white;
     
-    .about__content {
+    &__content {
         line-height: 1.1em;
         font-size: 1.1em;
         
@@ -13,10 +13,10 @@
             margin-bottom: 40px;
         }
         
-        .about__content__picture {
+        &__picture {
         }
         
-        .about__content__text {
+        &__text {
         }
     }
 }
