@@ -8,7 +8,7 @@
     background-color: $main-white;
     font-size: $header__font-size;
     line-height: $header-height;
-    padding: 0 20px 0 0;
+    transition: box-shadow 300ms;
         
     .header__nav {
         a.header__nav__author {
@@ -23,17 +23,22 @@
             padding: 0 7px 0 7px;
             text-align: center;
             text-decoration: none;
+            transition: 300ms;
         }
         
         a.header__nav__author:hover {
             color: $main-white;
             background-color: $main-black;
-            transition: 300ms;
         }
 
         a.header__nav__author:active {
             background-color: $main-white;
             color: $main-black;
+        }
+        
+        .header__nav--toggle {
+            float: right;
+            display: none;
         }
         
         &__menu {
@@ -64,20 +69,23 @@
                     }
                 }
             }
-
-            &--toggle {
-                display: none;
-            }
         }
     }    
 }
 
 @media screen and (max-width:680px) {
-    .header__nav__menu__links {
+    .header div.header__nav__menu {
+        background-color: $transparent-white;
+        width: 100%;
         display: none;
     }
     
-    .header__nav__menu--toggle {
+    .header__nav__menu ul.header__nav__menu__links li {
+        text-align: right;
+        display: block;
+    }
+    
+    .header nav.header__nav button.header__nav--toggle {
         display: block;
     }
 }

@@ -8,6 +8,95 @@
 /* Heights */
 /* Background images */
 /* Mixins */
+.bottom-shadow {
+  box-shadow: 0px 3px 5px grey;
+  -webkit-box-shadow: 0px 3px 5px grey;
+  -moz-box-shadow: 0px 3px 5px grey; }
+
+/* Components */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+/* INNER SPAN */
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 9.3px;
+  right: 9.3px;
+  height: 3px;
+  background: black; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -10px; }
+
+.c-hamburger span::after {
+  bottom: -10px; }
+
+/* ANIMATE TO x */
+.c-hamburger--htx {
+  background-color: white; }
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s; }
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: white; }
+
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s; }
+
 /* Layout */
 /* HEADER */
 .header {
@@ -18,7 +107,7 @@
   background-color: white;
   font-size: 22px;
   line-height: 50px;
-  padding: 0 20px 0 0; }
+  transition: box-shadow 300ms; }
   .header .header__nav a.header__nav__author {
     font-family: Noto serif, serif;
     font-weight: 400;
@@ -28,14 +117,17 @@
     float: left;
     padding: 0 7px 0 7px;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 300ms; }
   .header .header__nav a.header__nav__author:hover {
     color: white;
-    background-color: black;
-    transition: 300ms; }
+    background-color: black; }
   .header .header__nav a.header__nav__author:active {
     background-color: white;
     color: black; }
+  .header .header__nav .header__nav--toggle {
+    float: right;
+    display: none; }
   .header .header__nav__menu {
     float: right; }
     .header .header__nav__menu ul li {
@@ -54,13 +146,16 @@
       .header .header__nav__menu ul li a:active {
         background-color: white;
         color: black; }
-    .header .header__nav__menu--toggle {
-      display: none; }
 
 @media screen and (max-width: 680px) {
-  .header__nav__menu__links {
+  .header div.header__nav__menu {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
     display: none; }
-  .header__nav__menu--toggle {
+  .header__nav__menu ul.header__nav__menu__links li {
+    text-align: right;
+    display: block; }
+  .header nav.header__nav button.header__nav--toggle {
     display: block; } }
 
 /* FOOTER */
@@ -175,16 +270,5 @@
 body {
   font-family: Roboto, sans-serif;
   font-weight: 300; }
-
-.container {
-  width: 100%;
-  height: 100%;
-  background: url("/assets/background02.jpg") no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  background-position: top center; }
 
 /*# sourceMappingURL=style.css.map */
