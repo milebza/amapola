@@ -9,7 +9,7 @@ function addBottomShadow() {
 $(window).scroll(addBottomShadow);
 
 $(document).ready(function() {
-    $(".header__nav--toggle").click(function(e) {
+    $(".js-toggle").click(function(e) {
         e.preventDefault();
         if ($(this).hasClass("is-active") === true) {
             $(this).removeClass("is-active")
@@ -18,5 +18,12 @@ $(document).ready(function() {
             $(this).addClass("is-active");
             $(this).parent().find(".header__nav__menu").show();
         }
+    });
+    
+    $('.js-scroll-to').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr("data-page")).offset().top - 50
+        }, 1500, function() {});
     });
 });

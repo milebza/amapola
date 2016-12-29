@@ -4,19 +4,12 @@
     @include section;
     background-color: $main-white;
     
+    h1 {
+        @include title;
+    }
+    
     &__content {
         line-height: 1.1em;
         font-size: 1.1em;
-        
-        h1 {
-            @include title;
-            margin-bottom: 40px;
-        }
-        
-        &__picture {
-        }
-        
-        &__text {
-        }
     }
 }

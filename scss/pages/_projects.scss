@@ -2,17 +2,16 @@
 
 .projects {
     @include section;
-    @include flex-box-center;
     @include background-cover(bottom);
-    height: 500px;
+    
+    h1 {
+        @include title;
+    }
+    
+    height: 400px;
     
     &__content {
         line-height: 1.1em;
         font-size: 1.1em;
-        
-        h1 {
-            @include title;
-            margin-bottom: 40px;
-        }
     }
 }

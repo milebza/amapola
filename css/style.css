@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CUSTOM STYLE */
 /* Utils */
 /* VARIABLES */
@@ -12,6 +13,12 @@
   box-shadow: 0px 3px 5px grey;
   -webkit-box-shadow: 0px 3px 5px grey;
   -moz-box-shadow: 0px 3px 5px grey; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
 
 /* Components */
 .c-hamburger {
@@ -158,6 +165,112 @@
   .header nav.header__nav button.header__nav--toggle {
     display: block; } }
 
+/* Grid System */
+/* -------------
+    Calculations 
+   ------------- */
+/* scw = (100 – (m * (mc – 1))) / mc */
+/* scw = single column width */
+/* m = margin (1.6%) */
+/* mc = maximum columns (12) */
+/* cw = (scw * cs) + (m * (cs – 1)) */
+/* cw = column width */
+/* scw = single column width (6.86666666667%) */
+/* cs = column span (1-12) */
+/* m = margin (1.6%) */
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.column {
+  position: relative;
+  float: left;
+  display: block; }
+
+.column + .column {
+  margin-left: 1.6%; }
+
+.column-1 {
+  width: 6.86666666667%; }
+
+.column-2 {
+  width: 15.3333333333%; }
+
+.column-3 {
+  width: 23.8%; }
+
+.column-4 {
+  width: 32.2666666667%; }
+
+.column-5 {
+  width: 40.7333333333%; }
+
+.column-6 {
+  width: 49.2%; }
+
+.column-7 {
+  width: 57.6666666667%; }
+
+.column-8 {
+  width: 66.1333333333%; }
+
+.column-9 {
+  width: 74.6%; }
+
+.column-10 {
+  width: 83.0666666667%; }
+
+.column-11 {
+  width: 91.5333333333%; }
+
+.column-12 {
+  width: 100%;
+  margin-left: 0; }
+
+@media screen and (max-width: 680px) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    float: none;
+    width: auto; }
+  .column + .column {
+    margin-left: 0; } }
+
+/* Styling */
+.container {
+  padding: 20px; }
+
+.column {
+  padding: 5px;
+  min-height: 30px; }
+
+.row {
+  margin-bottom: 10px; }
+
+.row:last-child {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 680px) {
+  .row {
+    margin-bottom: 0; }
+  .column {
+    margin-bottom: 10px; }
+  .row:last-child .column:last-child {
+    margin-bottom: 0; } }
+
 /* FOOTER */
 .footer {
   width: 100%;
@@ -173,7 +286,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   color: white;
-  height: 50px; }
+  height: 80px; }
 
 /* Pages */
 /* HERO */
@@ -208,22 +321,19 @@
   width: 100%;
   text-align: center;
   background-color: white; }
+  .about h1 {
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 60px 0; }
   .about__content {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .about__content h1 {
-      font-size: 1.4em;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 40px; }
 
 /* PROJECTS */
 .projects {
   width: 100%;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: url("/assets/background02.jpg") no-repeat;
   background-attachment: fixed;
   background-position: bottom center;
@@ -231,41 +341,43 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 500px; }
+  height: 400px; }
+  .projects h1 {
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 60px 0; }
   .projects__content {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .projects__content h1 {
-      font-size: 1.4em;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 40px; }
 
 /* CONTACT */
 .contact {
   width: 100%;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
   height: 400px; }
-  .contact__content {
+  .contact h1 {
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 60px 0; }
+  .contact--last-p {
+    margin-bottom: 40px; }
+  .contact__links {
     line-height: 1.1em;
     font-size: 1.1em; }
-    .contact__content h1 {
-      font-size: 1.4em;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 40px; }
-    .contact__content--last-p {
-      margin-bottom: 60px; }
-    .contact__content ul li {
-      display: inline; }
-      .contact__content ul li a {
+    .contact__links ul li {
+      display: inline;
+      padding: 10px; }
+      .contact__links ul li a {
         color: black; }
-      .contact__content ul li a:hover {
+      .contact__links ul li a:hover {
         color: #3e7e89; }
+
+@media screen and (max-width: 680px) {
+  div.contact__links ul li {
+    display: block; } }
 
 body {
   font-family: Roboto, sans-serif;
