@@ -31,3 +31,17 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin background-cover($position) {
+    background: url($hero__image) no-repeat;
+    
+    background : {
+        attachment: fixed;
+        position: $position center;
+    }
+    
+    background-size:cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}

@@ -70,12 +70,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("/assets/background02.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   color: white;
   height: 50px; }
 
 /* Pages */
 /* HERO */
 .hero {
+  background: url("/assets/background02.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -115,6 +129,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("/assets/background02.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 500px; }
   .projects__content {
     line-height: 1.1em;
@@ -151,6 +172,10 @@
       .contact__content ul li a:hover {
         color: #3e7e89; }
 
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300; }
+
 .container {
   width: 100%;
   height: 100%;
@@ -160,8 +185,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
-  background-position: top center;
-  font-family: Roboto, sans-serif;
-  font-weight: 300; }
+  background-position: top center; }
 
 /*# sourceMappingURL=style.css.map */
