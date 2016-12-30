@@ -45,6 +45,8 @@
             float: right;
 
             ul {
+                
+                padding-right: 7px;
 
                 li {
                     display: inline;
@@ -81,8 +83,8 @@
     }
     
     .header__nav__menu ul.header__nav__menu__links li {
-        text-align: right;
         display: block;
+        padding: 0 0 0 10px;
     }
     
     .header nav.header__nav button.header__nav--toggle {

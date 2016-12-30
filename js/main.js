@@ -13,10 +13,10 @@ $(document).ready(function() {
         e.preventDefault();
         if ($(this).hasClass("is-active") === true) {
             $(this).removeClass("is-active")
-            $(this).parent().find(".header__nav__menu").hide();
+            $(this).parent().find(".header__nav__menu").slideUp();
         } else {
             $(this).addClass("is-active");
-            $(this).parent().find(".header__nav__menu").show();
+            $(this).parent().find(".header__nav__menu").slideDown();
         }
     });
     
