@@ -1,18 +1,43 @@
-/* VARIABLES */
+/* Variables */
 
-/* Fonts */
+
+//--------
+//  Fonts
+//--------
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i');
 
-/* Colors */
+
+//---------
+//  Colors
+//---------
+
 $main-white: rgb(255, 255, 255);
 $transparent-white: rgba(255, 255, 255, 0.7);
 $main-black: black;
 $dark-grey-blue: rgb(62, 126, 137);
+$shadow-color: grey;
 
-/* Heights */
+
+//----------
+//  Heights
+//----------
+
 $header__font-size: 22px;
 $header-height: 50px;
+$footer-height: 80px;
 
-/* Background images */
-$hero__image: "/assets/background02.jpg";
+
+//------------------
+//  Background image
+//------------------
+
+$background-image: "/assets/background02.jpg";
+
+
+//--------------------------------
+//  Media query viewport max width
+//--------------------------------
+
+$max-width: 680px;

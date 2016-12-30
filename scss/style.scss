@@ -1,23 +1,38 @@
-/* CUSTOM STYLE */
+/************************** 
 
-/* Utils */
+    CUSTOM STYLE for
+    
+    Milena Baeza's website
+
+***************************/
+
+
+/* UTILS */
+
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/classes';
 
-/* Components */
+
+/* COMPONENTS */
+
 @import 'components/toggle';
 
-/* Layout */
+
+/* LAYOUT */
+
 @import 'layout/header';
 @import 'layout/grid';
 @import 'layout/footer';
 
-/* Pages */
+
+/* PAGES */
+
 @import 'pages/hero';
 @import 'pages/about';
 @import 'pages/projects';
 @import 'pages/contact';
+
 
 body {
     font : {

@@ -1,4 +1,4 @@
-/* CONTACT */
+/* Contact */
 
 .contact {
     @include section;
@@ -12,11 +12,11 @@
         margin-bottom: 40px;
     }
     
-    height: 400px;
-    
     &__links {
         line-height: 1.1em;
         font-size: 1.1em;
+        
+        margin-bottom: 40px;
         
         ul {
             
@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:$max-width) {
     div.contact__links ul li {
         display: block;
     }

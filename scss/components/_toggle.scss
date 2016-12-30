@@ -1,3 +1,10 @@
+/* Toggle */
+
+
+//---------
+//  Square
+//---------
+
 .c-hamburger {
   display: block;
   position: relative;
@@ -20,7 +27,11 @@
   outline: none;
 }
 
-/* INNER SPAN */
+
+//------------
+//  3 stripes
+//------------
+
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -50,7 +61,11 @@
   bottom: -10px;
 }
 
-/* ANIMATE TO x */
+
+//---------------
+//  Animate to X
+//---------------
+
 .c-hamburger--htx {
   background-color: $main-white;
 }
@@ -73,7 +88,11 @@
   transition-property: bottom, transform;
 }
 
-/* active state, i.e. menu open */
+
+//-----------------------------------
+//  Toggle active state (menu is open)
+//-----------------------------------
+
 .c-hamburger--htx.is-active {
   background-color: $main-white;
 }

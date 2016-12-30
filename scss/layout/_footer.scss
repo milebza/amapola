@@ -1,9 +1,9 @@
-/* FOOTER */
+/* Footer */
 
 .footer {
     @include section;
     @include flex-box-center;
     @include background-cover(bottom);
     color: $main-white;
-    height: 80px;
+    height: $footer-height;
 }

@@ -1,13 +1,12 @@
+/* Classes */
+
+
+//----------------------
+//  Add a bottom shadow
+//----------------------
+
 .bottom-shadow {
-    box-shadow: 0px 3px 5px grey;
-    -webkit-box-shadow: 0px 3px 5px grey;
-    -moz-box-shadow: 0px 3px 5px grey;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.align-right {
-    text-align: right;
+    box-shadow: 0px 3px 5px $shadow-color;
+    -webkit-box-shadow: 0px 3px 5px $shadow-color;
+    -moz-box-shadow: 0px 3px 5px $shadow-color;
 }
