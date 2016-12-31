@@ -58,8 +58,8 @@
 //  Background with image cover
 //------------------------------
 
-@mixin background-cover($position) {
-    background: url($background-image) no-repeat;
+@mixin background-cover($position, $cover-image) {
+    background: url($cover-image) no-repeat;
     
     background : {
         attachment: fixed;

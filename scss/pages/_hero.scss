@@ -1,7 +1,7 @@
 /* Hero */
 
 .hero {
-    @include background-cover(top);
+    @include background-cover(top, $background-image);
     @include flex-box-center;
     width: 100%;
     height: 100vh;

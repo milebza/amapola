@@ -13,15 +13,22 @@
 //  Colors
 //---------
 
+/* White */
 $main-white: rgb(255, 255, 255);
-$dirty-white: rgb(171, 167, 167);
 $transparent-white: rgba(255, 255, 255, 0.7);
 $more-transparent-white: rgba(255, 255, 255, 0.2);
+
+/* Pink */
+$pale-pink: rgba(241, 221, 234, 0.7);
+
+/* Black */
 $main-black: rgb(24, 21, 23);
+$shadow-color: rgba(24, 21, 23, 0.5);
+
+/* Blue */
 $grey-blue: rgb(62, 126, 137);
 $dark-grey-blue: rgb(52, 82, 112);
 $transparent-dark-grey-blue: rgba(52, 82, 112, 0.4);
-$shadow-color: grey;
 
 
 //----------
@@ -37,7 +44,8 @@ $footer-height: 80px;
 //  Background image
 //------------------
 
-$background-image: "/assets/background02.jpg";
+$background-image: "/assets/background.jpg";
+$background-image--cropped: "/assets/background_cropped.jpg";
 
 
 //--------------------------------

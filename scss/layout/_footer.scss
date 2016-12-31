@@ -3,7 +3,7 @@
 .footer {
     @include section;
     @include flex-box-center;
-    @include background-cover(bottom);
+    @include background-cover(bottom, $background-image--cropped);
     color: $main-white;
     height: $footer-height;
 }

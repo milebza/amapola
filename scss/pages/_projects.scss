@@ -2,7 +2,7 @@
 
 .projects {
     @include section;
-    @include background-cover(bottom);
+    @include background-cover(bottom, $background-image--cropped);
     
     h1 {
         @include title;
@@ -24,7 +24,7 @@
         }
         
         span:hover {
-            background-color: $transparent-dark-grey-blue;
+            background-color: $pale-pink;//$transparent-dark-grey-blue;
             transition: 300ms;
         }
     }
