@@ -9,25 +9,26 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i');
 
 
-//---------
-//  Colors
-//---------
+//---------------
+//  Color Palette
+//---------------
 
 /* White */
 $main-white: rgb(255, 255, 255);
 $transparent-white: rgba(255, 255, 255, 0.7);
 $more-transparent-white: rgba(255, 255, 255, 0.2);
 
-/* Pink */
-$pale-pink: rgba(241, 221, 234, 0.7);
+/* Yellow */
+$pale-yellow: rgb(243, 231, 129);
+$transparent-pale-yellow: rgba(243, 231, 129, 0.8);
 
 /* Black */
 $main-black: rgb(24, 21, 23);
 $shadow-color: rgba(24, 21, 23, 0.5);
 
 /* Blue */
-$grey-blue: rgb(62, 126, 137);
-$dark-grey-blue: rgb(52, 82, 112);
+$blue-green: rgb(18, 170, 176);
+$dark-grey-blue: rgb(20, 92, 128);
 $transparent-dark-grey-blue: rgba(52, 82, 112, 0.4);
 
 
@@ -46,6 +47,7 @@ $footer-height: 80px;
 
 $background-image: "/assets/background.jpg";
 $background-image--cropped: "/assets/background_cropped.jpg";
+$background-image--cropped2: "/assets/background_cropped2.jpg";
 
 
 //--------------------------------
