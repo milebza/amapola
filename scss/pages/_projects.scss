@@ -13,5 +13,25 @@
         font-size: 1.1em;
         
         padding-bottom: 70px;
+        
+        span {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 300ms;
+            border: 2px solid $main-black;
+            background-color: $more-transparent-white;
+        }
+        
+        span:hover {
+            background-color: $transparent-dark-grey-blue;
+            transition: 300ms;
+        }
+    }
+}
+
+@media screen and (max-width:$max-width) {
+    section.projects div.projects__content div.projects__content__item {
+        padding: 10px;
     }
 }

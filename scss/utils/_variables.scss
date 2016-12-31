@@ -14,9 +14,13 @@
 //---------
 
 $main-white: rgb(255, 255, 255);
+$dirty-white: rgb(171, 167, 167);
 $transparent-white: rgba(255, 255, 255, 0.7);
-$main-black: black;
-$dark-grey-blue: rgb(62, 126, 137);
+$more-transparent-white: rgba(255, 255, 255, 0.2);
+$main-black: rgb(24, 21, 23);
+$grey-blue: rgb(62, 126, 137);
+$dark-grey-blue: rgb(52, 82, 112);
+$transparent-dark-grey-blue: rgba(52, 82, 112, 0.4);
 $shadow-color: grey;
 
 
@@ -41,3 +45,4 @@ $background-image: "/assets/background02.jpg";
 //--------------------------------
 
 $max-width: 680px;
+$max-width--about: 880px;
