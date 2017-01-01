@@ -112,7 +112,9 @@
   background-color: white;
   font-size: 22px;
   line-height: 50px;
-  transition: box-shadow 300ms; }
+  transition: box-shadow 300ms;
+  -webkit-transition: box-shadow 300ms;
+  -moz-transition: box-shadow 300ms; }
   .header .header__nav a.header__nav__author {
     font-family: Noto serif, serif;
     font-weight: 400;
@@ -123,7 +125,9 @@
     padding: 0 7px 0 7px;
     text-align: center;
     text-decoration: none;
-    transition: 300ms; }
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+    -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+    -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
   .header .header__nav a.header__nav__author:hover {
     color: white;
     background-color: #181517; }
@@ -141,13 +145,13 @@
         display: inline;
         margin: 0 5px;
         padding: 10px; }
-        .header .header__nav__menu ul li a:link {
+        .header .header__nav__menu ul li a {
           text-decoration: none;
           color: #181517;
           border-bottom: solid 2px transparent;
-          transition: 300ms; }
-        .header .header__nav__menu ul li a:visited {
-          color: #181517; }
+          transition: 300ms;
+          -webkit-transition: 300ms;
+          -moz-transition: 300ms; }
         .header .header__nav__menu ul li a:hover {
           border-bottom: solid 2px #181517; }
         .header .header__nav__menu ul li a:active {
@@ -377,7 +381,9 @@
       cursor: pointer;
       border: 2px solid #181517;
       background-color: rgba(255, 255, 255, 0.2);
-      transition: 300ms; }
+      transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+      -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+      -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
     .projects__content span:hover {
       background-color: rgba(243, 231, 129, 0.8);
       color: white; }

@@ -20,13 +20,13 @@
             cursor: pointer;
             border: 2px solid $main-black;
             background-color: $more-transparent-white;
-            transition: 300ms;
+            
+            @include transition-color-background-color;
         }
         
         span:hover {
             background-color: $transparent-pale-yellow;
             color: $main-white;
-            //transition: 300ms;
         }
     }
 }

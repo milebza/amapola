@@ -8,7 +8,10 @@
     background-color: $main-white;
     font-size: $header__font-size;
     line-height: $header-height;
+    
     transition: box-shadow 300ms;
+    -webkit-transition: box-shadow 300ms;
+    -moz-transition: box-shadow 300ms;
         
     .header__nav {
         a.header__nav__author {
@@ -21,9 +24,13 @@
             width: 200px;
             float: left;
             padding: 0 7px 0 7px;
-            text-align: center;
-            text-decoration: none;
-            transition: 300ms;
+            
+            text : {
+                align: center;
+                decoration: none;
+            }
+            
+            @include transition-color-background-color;
         }
         
         a.header__nav__author:hover {
@@ -53,14 +60,15 @@
                     margin: 0 5px;
                     padding: 10px;
 
-                    a:link {
+                    a {
                         text-decoration: none;
                         color: $main-black;
                         border-bottom: solid 2px transparent;
+                        
                         transition: 300ms;
-                    }
-                    a:visited {
-                        color: $main-black;
+                        -webkit-transition: 300ms;
+                        -moz-transition: 300ms;
+                        
                     }
                     a:hover {
                         border-bottom: solid 2px $main-black;
