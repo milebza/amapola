@@ -1,7 +1,7 @@
 /* Contact */
 
 .contact {
-    @include section;
+    @include section($main-white);
     background-color: $main-white;
     
     h1 {
@@ -25,11 +25,12 @@
                 padding: 10px;
 
                 a {
-                   color: $main-black; 
+                    color: $main-black;
+                    @include transition-color;    
                 }
 
                 a:hover {
-                    color: $dark-grey-blue;
+                    color: $pale-yellow;
                 }
             }
         }

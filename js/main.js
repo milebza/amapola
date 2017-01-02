@@ -25,7 +25,7 @@ $(window).scroll(addBottomShadow);
 $(document).ready(function() {
     
     //-----------------------------
-    //  Open/close the mobile menu
+    //  Open/close mobile menu
     //-----------------------------
     
     $(".js-toggle").click(function(e) {
@@ -47,7 +47,20 @@ $(document).ready(function() {
     $('.js-scroll-to').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr("data-page")).offset().top - 50
-        }, 1500, function() {});
+            scrollTop: $($(this).attr("data-page")).offset().top
+        }, 1500, 'easeInOutExpo');
+    });
+    
+    
+    //-------------------
+    //  Slick (Caroussel)
+    //-------------------
+    
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
 });

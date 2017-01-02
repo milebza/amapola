@@ -1,7 +1,7 @@
 /* Footer */
 
 .footer {
-    @include section;
+    @include section($dark-grey-blue);
     @include flex-box-center;
     @include background-cover(bottom, $background-image--cropped2);
     color: $main-white;

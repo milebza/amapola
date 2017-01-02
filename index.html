@@ -9,6 +9,11 @@
         <!-- Font awesome -->
         <link rel="stylesheet" type="text/css" href="/css/font-awesome/font-awesome.min.css">
         
+        <!-- Slick (Carousel) -->
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+        
         <!-- Custom style -->
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         
@@ -76,18 +81,31 @@
         <!-- PROJECTS -->
         <section class="projects">
             <h1>Projects</h1>
-            <div class="projects__content container">
-                <div class="row">
-                    <div class="projects__content__item column column-12"><span>FRONTEND</span></div>
+            <div class="flex-box">
+                <div class="projects__content container">
+                    <div class="row">
+                        <div class="projects__content__item column column-12"><span>FRONTEND</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="projects__content__item column column-12"><span>VISUAL COMPOSITIONS</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="projects__content__item column column-12"><span>GROUP PROJECT</span></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="projects__content__item column column-12"><span>VISUAL COMPOSITIONS</span></div>
-                </div>
-                <div class="row">
-                    <div class="projects__content__item column column-12"><span>GROUP PROJECT</span></div>
-                </div>
-            </div>    
+            </div>
         </section>
+        
+        <!-- PROJECTS CAROUSSEL -->
+<!--
+        <section class="projects__carousel">
+            <div class="fade">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+-->
         
         <!-- CONTACT -->
         <section class="contact">
@@ -112,7 +130,16 @@
             <span>&copy; 2016 &minus; Coded and designed by me</span>
         </footer>
         
-        <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>  
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        
+        <!-- jQuery easing -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        
+        <!-- Slick (Carousel) -->
+        <script src="slick/slick/slick.min.js"></script>
+        
+        <!-- Custom js -->
         <script src="js/main.js"></script>
     </body>
 </html>

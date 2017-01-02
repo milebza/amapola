@@ -1,6 +1,7 @@
 /* Hero */
 
 .hero {
+    background-color: $dark-grey-blue;
     @include background-cover(top, $background-image);
     @include flex-box-center;
     width: 100%;

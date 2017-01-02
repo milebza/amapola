@@ -1,8 +1,7 @@
 /* About */
 
 .about {
-    @include section;
-    background-color: $main-white;
+    @include section($main-white);
     
     h1 {
         @include title;
@@ -17,7 +16,7 @@
             text-align: center;
             img {
                 width: 65%;
-                //height: 400px;
+                height: 65%;
                 border-radius: 50%;
             }
         }
