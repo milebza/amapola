@@ -165,19 +165,20 @@
   /* line 46, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav .header__nav--toggle {
     float: right;
+    margin-right: 7px;
     display: none; }
-  /* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+  /* line 52, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav__menu {
     float: right; }
-    /* line 54, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+    /* line 55, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
     .header .header__nav__menu ul {
       padding-right: 7px; }
-      /* line 58, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+      /* line 59, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
       .header .header__nav__menu ul li {
         display: inline;
         margin: 0 5px;
         padding: 10px; }
-        /* line 63, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+        /* line 64, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a {
           text-decoration: none;
           color: #181517;
@@ -185,26 +186,26 @@
           transition: 300ms;
           -webkit-transition: 300ms;
           -moz-transition: 300ms; }
-        /* line 73, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+        /* line 74, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a:hover {
           border-bottom: solid 2px #181517; }
-        /* line 76, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+        /* line 77, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a:active {
           background-color: white;
           color: #181517; }
 
 @media screen and (max-width: 680px) {
-  /* line 87, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+  /* line 88, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header div.header__nav__menu {
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     display: none; }
-  /* line 93, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+  /* line 94, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header__nav__menu ul.header__nav__menu__links li {
     display: block;
     text-align: right;
     padding: 0 5px 0 0; }
-  /* line 99, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
+  /* line 100, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header nav.header__nav button.header__nav--toggle {
     display: block; } }
 

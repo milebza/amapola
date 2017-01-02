@@ -53,7 +53,7 @@ $(document).ready(function() {
     
     
     //-------------------
-    //  Slick (Caroussel)
+    //  Slick (Carousel)
     //-------------------
     
     $('.fade').slick({
