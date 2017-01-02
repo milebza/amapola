@@ -10,3 +10,14 @@
     -webkit-box-shadow: 0px 3px 5px $shadow-color;
     -moz-box-shadow: 0px 3px 5px $shadow-color;
 }
+
+
+//----------------------
+//  
+//----------------------
+
+.flex-box {
+    @include flex-box-center;
+    flex: 1 1 auto;
+    //border: 1px solid blue;
+}

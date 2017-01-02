@@ -4,8 +4,15 @@
     @include section($main-white);
     background-color: $main-white;
     
+    height: 60vh;
+    
+    display: flex;
+    flex-flow: column;
+    
     h1 {
         @include title;
+        
+        flex: 0 1 142px;
     }
 
     &--last-p {
@@ -15,8 +22,6 @@
     &__links {
         line-height: 1.1em;
         font-size: 1.1em;
-        
-        margin-bottom: 40px;
         
         ul {
             
