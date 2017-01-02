@@ -550,7 +550,7 @@
 @media screen and (max-width: 680px) {
   /* line 47, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   section.contact {
-    height: 80vh; }
+    height: 90vh; }
   /* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   div.contact__links ul li {
     display: block; } }
