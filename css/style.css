@@ -548,7 +548,10 @@
         color: #f3e781; }
 
 @media screen and (max-width: 680px) {
-  /* line 46, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
+  /* line 47, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
+  section.contact {
+    height: 80vh; }
+  /* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   div.contact__links ul li {
     display: block; } }
 

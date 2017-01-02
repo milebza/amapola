@@ -43,6 +43,11 @@
 }
 
 @media screen and (max-width:$max-width) {
+    
+    section.contact {
+        height: 80vh;
+    }
+    
     div.contact__links ul li {
         display: block;
     }
