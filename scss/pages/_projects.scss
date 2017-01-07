@@ -4,7 +4,7 @@
     @include section($dark-grey-blue);
     @include background-cover(bottom, $background-image--cropped);
     
-    height: 90vh;
+    height: 100vh;
     
     display: flex;
     flex-flow: column;
@@ -45,7 +45,17 @@
     }
 }
 
-@media screen and (max-width:$max-width) {
+@media screen and (max-width:$max-width) and (max-height:$max-height) {
+    section.projects {
+        height: 500px;
+    }
+    
+    section.projects div.projects__content div.projects__content__item {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:$max-width) and (min-height:$max-height) {
     section.projects {
         height: 100vh;
     }
