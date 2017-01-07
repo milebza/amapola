@@ -15,13 +15,11 @@
 /* Blue */
 /* Mixins */
 /* Classes */
-/* line 8, /Users/milenabaeza/Documents/milebza.github.io/scss/utils/_classes.scss */
 .bottom-shadow {
   box-shadow: 0px 3px 5px rgba(24, 21, 23, 0.5);
   -webkit-box-shadow: 0px 3px 5px rgba(24, 21, 23, 0.5);
   -moz-box-shadow: 0px 3px 5px rgba(24, 21, 23, 0.5); }
 
-/* line 19, /Users/milenabaeza/Documents/milebza.github.io/scss/utils/_classes.scss */
 .flex-box {
   display: flex;
   align-items: center;
@@ -30,7 +28,6 @@
 
 /* COMPONENTS */
 /* Toggle */
-/* line 8, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger {
   display: block;
   position: relative;
@@ -48,11 +45,9 @@
   cursor: pointer;
   transition: background 0.3s; }
 
-/* line 26, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger:focus {
   outline: none; }
 
-/* line 35, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -62,7 +57,6 @@
   height: 3px;
   background: #181517; }
 
-/* line 45, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger span::before,
 .c-hamburger span::after {
   position: absolute;
@@ -73,62 +67,49 @@
   background-color: #181517;
   content: ""; }
 
-/* line 56, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger span::before {
   top: -10px; }
 
-/* line 60, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger span::after {
   bottom: -10px; }
 
-/* line 69, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx {
   background-color: white; }
 
-/* line 73, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx span {
   transition: background 0s 0.3s; }
 
-/* line 77, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s; }
 
-/* line 83, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx span::before {
   transition-property: top, transform; }
 
-/* line 87, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx span::after {
   transition-property: bottom, transform; }
 
-/* line 96, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx.is-active {
   background-color: white; }
 
-/* line 100, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx.is-active span {
   background: none; }
 
-/* line 104, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg); }
 
-/* line 109, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg); }
 
-/* line 114, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s; }
 
 /* LAYOUT */
 /* Header */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
 .header {
   position: fixed;
   z-index: 99;
@@ -140,7 +121,6 @@
   transition: box-shadow 300ms;
   -webkit-transition: box-shadow 300ms;
   -moz-transition: box-shadow 300ms; }
-  /* line 17, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav a.header__nav__author {
     font-family: Noto serif, serif;
     font-weight: 400;
@@ -154,31 +134,24 @@
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
     -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
     -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
-  /* line 36, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav a.header__nav__author:hover {
     color: white;
     background-color: #181517; }
-  /* line 41, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav a.header__nav__author:active {
     background-color: white;
     color: #181517; }
-  /* line 46, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav .header__nav--toggle {
     float: right;
     margin-right: 7px;
     display: none; }
-  /* line 52, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header .header__nav__menu {
     float: right; }
-    /* line 55, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
     .header .header__nav__menu ul {
       padding-right: 7px; }
-      /* line 59, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
       .header .header__nav__menu ul li {
         display: inline;
         margin: 0 5px;
         padding: 10px; }
-        /* line 64, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a {
           text-decoration: none;
           color: #181517;
@@ -186,100 +159,79 @@
           transition: 300ms;
           -webkit-transition: 300ms;
           -moz-transition: 300ms; }
-        /* line 74, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a:hover {
           border-bottom: solid 2px #181517; }
-        /* line 77, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
         .header .header__nav__menu ul li a:active {
           background-color: white;
           color: #181517; }
 
 @media screen and (max-width: 680px) {
-  /* line 88, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header div.header__nav__menu {
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     display: none; }
-  /* line 94, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header__nav__menu ul.header__nav__menu__links li {
     display: block;
     text-align: right;
     padding: 0 5px 0 0; }
-  /* line 100, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header nav.header__nav button.header__nav--toggle {
     display: block; } }
 
 /* Grid System */
-/* line 9, /Users/milenabaeza/Documents/milebza.github.io/scss/utils/_mixins.scss */
-.row:before, .row:after {
+.row:before,
+.row:after {
   content: " ";
   display: table; }
 
-/* line 14, /Users/milenabaeza/Documents/milebza.github.io/scss/utils/_mixins.scss */
 .row:after {
   clear: both; }
 
-/* line 37, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column {
   position: relative;
   float: left;
   display: block; }
 
-/* line 43, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column + .column {
   margin-left: 1.6%; }
 
-/* line 47, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-1 {
   width: 6.86666666667%; }
 
-/* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-2 {
   width: 15.3333333333%; }
 
-/* line 55, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-3 {
   width: 23.8%; }
 
-/* line 59, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-4 {
   width: 32.2666666667%; }
 
-/* line 63, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-5 {
   width: 40.7333333333%; }
 
-/* line 67, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-6 {
   width: 49.2%; }
 
-/* line 71, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-7 {
   width: 57.6666666667%; }
 
-/* line 75, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-8 {
   width: 66.1333333333%; }
 
-/* line 79, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-9 {
   width: 74.6%; }
 
-/* line 83, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-10 {
   width: 83.0666666667%; }
 
-/* line 87, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-11 {
   width: 91.5333333333%; }
 
-/* line 91, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column-12 {
   width: 100%;
   margin-left: 0; }
 
 @media screen and (max-width: 680px) {
-  /* line 97, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .column-1,
   .column-2,
   .column-3,
@@ -294,40 +246,31 @@
   .column-12 {
     float: none;
     width: auto; }
-  /* line 113, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .column + .column {
     margin-left: 0; } }
 
-/* line 123, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .container {
   padding: 20px; }
 
-/* line 127, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .column {
   padding: 5px;
   min-height: 30px; }
 
-/* line 133, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .row {
   margin-bottom: 10px; }
 
-/* line 137, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
 .row:last-child {
   margin-bottom: 0; }
 
 @media screen and (max-width: 680px) {
-  /* line 142, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .row {
     margin-bottom: 0; }
-  /* line 145, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .column {
     margin-bottom: 10px; }
-  /* line 148, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .row:last-child .column:last-child {
     margin-bottom: 0; } }
 
 /* Footer */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_footer.scss */
 .footer {
   width: 100%;
   text-align: center;
@@ -347,7 +290,6 @@
 
 /* PAGES */
 /* Hero */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_hero.scss */
 .hero {
   background-color: #145c80;
   background: url("/assets/background.jpg") no-repeat;
@@ -362,23 +304,21 @@
   justify-content: center;
   width: 100%;
   height: 100vh; }
-  /* line 9, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_hero.scss */
   .hero__content {
-    width: 800px;
+    width: 700px;
     padding: 30px 20px 30px;
     margin: 0 15px;
     text-align: center; }
-    /* line 15, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_hero.scss */
     .hero__content__title {
+      display: inline;
       font-size: 1.7em;
-      margin-bottom: 30px; }
-    /* line 22, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_hero.scss */
+      font-weight: 400;
+      line-height: 1.8em; }
     .hero__content__text {
-      font-size: 1.3em;
-      line-height: 1.3em; }
+      font-size: 1.5em;
+      line-height: 1.5em; }
 
 /* About */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
 .about {
   width: 100%;
   text-align: center;
@@ -386,72 +326,55 @@
   height: 100vh;
   display: flex;
   flex-flow: column; }
-  /* line 11, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   .about h1 {
     font-size: 1.4em;
     text-align: center;
     text-transform: uppercase;
     padding: 120px 0 0 0;
     flex: 0 1 142px; }
-  /* line 16, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   .about__content {
-    line-height: 1.6em;
+    line-height: 1.7em;
     font-size: 1.1em; }
-    /* line 20, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
     .about__content__picture__frame {
       text-align: center; }
-      /* line 22, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
       .about__content__picture__frame img {
         width: 65%;
         height: 65%;
         border-radius: 50%; }
-    /* line 29, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
     .about__content__text--first-p {
       text-align: justify;
       padding: 0 100px 10px 0; }
-    /* line 34, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
     .about__content__text--last-p {
       text-align: center;
       padding: 0 100px 10px 0; }
-      /* line 38, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
       .about__content__text--last-p a {
         color: #12aab0;
         text-decoration: none; }
 
 @media screen and (max-width: 953px) {
-  /* line 48, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   section.about {
     height: auto; }
-  /* line 52, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   section.about h1 {
     padding-bottom: 20px; }
-  /* line 56, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.about__content div.about__content__text p.about__content__text--first-p {
     text-align: center;
     padding: 0 20px 10px 20px; }
-  /* line 61, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.about__content div.about__content__text p.about__content__text--last-p {
     padding: 0 20px 10px 20px; }
   /* Change grid */
-  /* line 67, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.column-6 {
     float: none;
     width: auto; }
-  /* line 72, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.column + div.column {
     margin-left: 0; }
-  /* line 76, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.row {
     margin-bottom: 0; }
-  /* line 79, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.column {
     margin-bottom: 10px; }
-  /* line 82, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.row:last-child .column:last-child {
     margin-bottom: 0; } }
 
 /* Projects */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
 .projects {
   width: 100%;
   text-align: center;
@@ -466,7 +389,6 @@
   height: 90vh;
   display: flex;
   flex-flow: column; }
-  /* line 12, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   .projects h1 {
     font-size: 1.4em;
     text-align: center;
@@ -478,12 +400,10 @@
             flex-shrink: 1,
             flex-basis: 142px
         *********************/ }
-  /* line 24, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   .projects__content {
     line-height: 1.1em;
     font-size: 1.1em;
     width: 100%; }
-    /* line 31, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
     .projects__content span {
       display: inline-block;
       padding: 10px;
@@ -493,28 +413,23 @@
       transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
       -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
       -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
-    /* line 41, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
     .projects__content span:hover {
       background-color: rgba(243, 231, 129, 0.8);
       color: #181517; }
 
 @media screen and (max-width: 680px) {
-  /* line 49, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   section.projects {
     height: 100vh; }
-  /* line 53, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   section.projects div.projects__content div.projects__content__item {
     padding: 10px; } }
 
 /* Projects Carousel */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects-carousel.scss */
 .projects__carousel {
   width: 100%;
   text-align: center;
   background-color: darkgrey; }
 
 /* Contact */
-/* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
 .contact {
   width: 100%;
   text-align: center;
@@ -523,46 +438,36 @@
   height: 60vh;
   display: flex;
   flex-flow: column; }
-  /* line 12, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   .contact h1 {
     font-size: 1.4em;
     text-align: center;
     text-transform: uppercase;
     padding: 120px 0 0 0;
     flex: 0 1 142px; }
-  /* line 18, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   .contact--last-p {
     margin-bottom: 40px; }
-  /* line 22, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   .contact__links {
     line-height: 1.1em;
     font-size: 1.1em; }
-    /* line 28, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
     .contact__links ul li {
       display: inline;
       padding: 10px; }
-      /* line 32, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
       .contact__links ul li a {
         color: #181517;
         transition: color 200ms ease-in-out;
         -webkit-transition: color 200ms ease-in-out;
         -moz-transition: color 200ms ease-in-out; }
-      /* line 37, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
       .contact__links ul li a:hover {
         color: #f3e781; }
 
 @media screen and (max-width: 953px) {
-  /* line 47, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   section.contact {
     height: 500px; }
-  /* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   section.contact h1 {
     padding-bottom: 20px; }
-  /* line 55, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   div.contact__links ul li {
     display: block; } }
 
-/* line 38, /Users/milenabaeza/Documents/milebza.github.io/scss/style.scss */
 body {
   font-family: Roboto, sans-serif;
   font-weight: 300; }
