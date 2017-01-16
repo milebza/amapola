@@ -4,6 +4,8 @@
     @include section($dark-grey-blue);
     @include background-cover(bottom, $background-image--cropped);
     
+    position: relative;
+    
     height: 100vh;
     
     display: flex;
@@ -56,10 +58,6 @@
 }
 
 @media screen and (max-width:$max-width) and (min-height:$max-height) {
-    section.projects {
-        height: 100vh;
-    }
-    
     section.projects div.projects__content div.projects__content__item {
         padding: 10px;
     }

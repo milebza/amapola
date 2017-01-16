@@ -26,20 +26,16 @@
             }
         }
         
-        &__text--first-p {
+        p {
             text-align: justify;
             padding: 0 100px 10px 0;
         }
         
-        &__text--last-p {
-            text-align: center;
-            padding: 0 100px 10px 0;
             
             a {
                 color: $blue-green;
                 text-decoration: none;
             }
-        }
     }
 }
 
@@ -53,14 +49,14 @@
         padding-bottom: 20px;
     }
     
-    div.about__content div.about__content__text p.about__content__text--first-p {
+    div.about__content div.about__content__text p {
         text-align: center;
         padding: 0 20px 10px 20px;
     }
     
-    div.about__content div.about__content__text p.about__content__text--last-p {
-        padding: 0 20px 10px 20px;
-    }
+//    div.about__content div.about__content__text p.about__content__text--last-p {
+//        padding: 0 20px 10px 20px;
+//    }
     
     /* Change grid */
     

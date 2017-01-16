@@ -28,15 +28,35 @@ $(document).ready(function() {
     //  Open/close mobile menu
     //-----------------------------
     
-    $(".js-toggle").click(function(e) {
+    $('.js-toggle').click(function(e) {
         e.preventDefault();
-        if ($(this).hasClass("is-active") === true) {
+        if ($(this).hasClass('is-active') === true) {
             $(this).removeClass("is-active")
-            $(this).parent().find(".header__nav__menu").slideUp(500);
+            $(this).parent().find('.header__nav__menu').slideUp(500);
         } else {
-            $(this).addClass("is-active");
-            $(this).parent().find(".header__nav__menu").slideDown(500);
+            $(this).addClass('is-active');
+            $(this).parent().find('.header__nav__menu').slideDown(500);
         }
+    });
+    
+    
+    //-----------------------------
+    //  Open carousel frontend
+    //-----------------------------
+    
+    $('.js-projc-frontend').click(function(e) {
+        e.preventDefault();
+        $('.js-open-projc-frontend').show();
+    });
+    
+    
+    //-----------------------------
+    //  Close carousel
+    //-----------------------------
+    
+    $('.js-close').click(function(e) {
+        e.preventDefault();
+        $('.js-open-projc-frontend').hide();
     });
     
     
@@ -47,7 +67,7 @@ $(document).ready(function() {
     $('.js-scroll-to').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr("data-page")).offset().top
+            scrollTop: $($(this).attr('data-page')).offset().top
         }, 1500, 'easeInOutExpo');
     });
     

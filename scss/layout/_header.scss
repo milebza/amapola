@@ -2,7 +2,7 @@
 
 .header {
     position: fixed;
-    z-index: 99;
+    z-index: 90;
     width: 100%;
     height: $header-height;
     background-color: $main-white;
@@ -79,6 +79,15 @@
                         color: $main-black;
                     }
                 }
+                
+                li.header__nav__menu__links__github {
+                    font-size: 14px;
+                    text-align: center;
+                    padding: 0;
+                    a:hover {
+                        border-bottom: solid 2px transparent;
+                    }
+                }
             }
         }
     }    
@@ -92,6 +101,12 @@
     }
     
     .header__nav__menu ul.header__nav__menu__links li {
+        display: block;
+        text-align: right;
+        padding: 0 5px 0 0;
+    }
+    
+    .header__nav__menu ul.header__nav__menu__links li.header__nav__menu__links__github {
         display: block;
         text-align: right;
         padding: 0 5px 0 0;
