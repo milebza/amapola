@@ -410,7 +410,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   color: white;
-  height: 100px; }
+  height: 20vh; }
 
 @media screen and (max-width: 680px) {
   /* line 12, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_footer.scss */
@@ -499,6 +499,9 @@
   div.about__content div.about__content__text p {
     text-align: center;
     padding: 0 20px 10px 20px; }
+  /* line 57, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
+  div.about__content div.about__content__text p.about__content__text--last-p {
+    padding: 0 20px 20px 20px; }
   /* Change grid */
   /* line 63, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.column-6 {
@@ -626,7 +629,7 @@
   text-align: center;
   background-color: white;
   background-color: white;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-flow: column; }
   /* line 12, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
