@@ -16,8 +16,12 @@
         display: flex;
         flex-flow: column;
 
-        &__button--close {
+        &__button-wrapper {
             flex: 0 1 50px;
+            
+            .x-button {
+                float: right;
+            }
         }
 
         &__wrapper {
