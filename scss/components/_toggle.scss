@@ -5,7 +5,7 @@
 //  Square
 //---------
 
-.c-hamburger {
+.toggle-hamburger {
     display: block;
     position: relative;
     overflow: hidden;
@@ -23,7 +23,7 @@
     transition: background 0.3s;
 }
 
-.c-hamburger:focus {
+.toggle-hamburger:focus {
     outline: none;
 }
 
@@ -32,7 +32,7 @@
 //  3 stripes
 //------------
 
-.c-hamburger span {
+.toggle-hamburger span {
     display: block;
     position: absolute;
     top: 23px;
@@ -42,8 +42,8 @@
     background: $main-black;
 }
 
-.c-hamburger span::before,
-.c-hamburger span::after {
+.toggle-hamburger span::before,
+.toggle-hamburger span::after {
     position: absolute;
     display: block;
     left: 0;
@@ -53,11 +53,11 @@
     content: "";
 }
 
-.c-hamburger span::before {
+.toggle-hamburger span::before {
     top: -10px;
 }
 
-.c-hamburger span::after {
+.toggle-hamburger span::after {
     bottom: -10px;
 }
 
@@ -66,25 +66,25 @@
 //  Animate to X
 //---------------
 
-.c-hamburger--htx {
+.toggle-hamburger--x {
   background-color: $main-white;
 }
 
-.c-hamburger--htx span {
+.toggle-hamburger--x span {
   transition: background 0s 0.3s;
 }
 
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
+.toggle-hamburger--x span::before,
+.toggle-hamburger--x span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
 }
 
-.c-hamburger--htx span::before {
+.toggle-hamburger--x span::before {
   transition-property: top, transform;
 }
 
-.c-hamburger--htx span::after {
+.toggle-hamburger--x span::after {
   transition-property: bottom, transform;
 }
 
@@ -93,25 +93,25 @@
 //  Toggle active state (menu is open)
 //-----------------------------------
 
-.c-hamburger--htx.is-active {
+.toggle-hamburger--x.is-active {
   background-color: $main-white;
 }
 
-.c-hamburger--htx.is-active span {
+.toggle-hamburger--x.is-active span {
   background: none;
 }
 
-.c-hamburger--htx.is-active span::before {
+.toggle-hamburger--x.is-active span::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.c-hamburger--htx.is-active span::after {
+.toggle-hamburger--x.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
 
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
+.toggle-hamburger--x.is-active span::before,
+.toggle-hamburger--x.is-active span::after {
   transition-delay: 0s, 0.3s;
 }

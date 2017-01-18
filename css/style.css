@@ -31,7 +31,7 @@
 /* COMPONENTS */
 /* Toggle */
 /* line 8, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger {
+.toggle-hamburger {
   display: block;
   position: relative;
   overflow: hidden;
@@ -49,11 +49,11 @@
   transition: background 0.3s; }
 
 /* line 26, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger:focus {
+.toggle-hamburger:focus {
   outline: none; }
 
 /* line 35, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger span {
+.toggle-hamburger span {
   display: block;
   position: absolute;
   top: 23px;
@@ -63,8 +63,8 @@
   background: #181517; }
 
 /* line 45, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger span::before,
-.c-hamburger span::after {
+.toggle-hamburger span::before,
+.toggle-hamburger span::after {
   position: absolute;
   display: block;
   left: 0;
@@ -74,56 +74,56 @@
   content: ""; }
 
 /* line 56, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger span::before {
+.toggle-hamburger span::before {
   top: -10px; }
 
 /* line 60, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger span::after {
+.toggle-hamburger span::after {
   bottom: -10px; }
 
 /* line 69, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx {
+.toggle-hamburger--x {
   background-color: white; }
 
 /* line 73, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx span {
+.toggle-hamburger--x span {
   transition: background 0s 0.3s; }
 
 /* line 77, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
+.toggle-hamburger--x span::before,
+.toggle-hamburger--x span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s; }
 
 /* line 83, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx span::before {
+.toggle-hamburger--x span::before {
   transition-property: top, transform; }
 
 /* line 87, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx span::after {
+.toggle-hamburger--x span::after {
   transition-property: bottom, transform; }
 
 /* line 96, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx.is-active {
+.toggle-hamburger--x.is-active {
   background-color: white; }
 
 /* line 100, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx.is-active span {
+.toggle-hamburger--x.is-active span {
   background: none; }
 
 /* line 104, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx.is-active span::before {
+.toggle-hamburger--x.is-active span::before {
   top: 0;
   transform: rotate(45deg); }
 
 /* line 109, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx.is-active span::after {
+.toggle-hamburger--x.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg); }
 
 /* line 114, /Users/milenabaeza/Documents/milebza.github.io/scss/components/_toggle.scss */
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
+.toggle-hamburger--x.is-active span::before,
+.toggle-hamburger--x.is-active span::after {
   transition-delay: 0s, 0.3s; }
 
 /* x button */
