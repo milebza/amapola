@@ -39,8 +39,6 @@ $transparent-dark-grey-blue: rgba(52, 82, 112, 0.4);
 
 $header__font-size: 22px;
 $header-height: 50px;
-$footer-height: 20vh;
-$footer-height-mobile: 80px;
 
 
 //------------------
@@ -56,6 +54,5 @@ $background-image--cropped2: "/assets/background_cropped2.jpg";
 //  Media queries
 //-----------------
 
-$max-width: 680px;
-$max-width--about: 953px;
+$max-width: 960px;
 $max-height: 550px;

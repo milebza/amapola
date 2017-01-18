@@ -256,7 +256,7 @@
         .header .header__nav__menu ul li.header__nav__menu__links__github a:hover {
           border-bottom: solid 2px transparent; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 960px) {
   /* line 97, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_header.scss */
   .header div.header__nav__menu {
     background-color: rgba(255, 255, 255, 0.7);
@@ -345,7 +345,7 @@
   width: 100%;
   margin-left: 0; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 960px) {
   /* line 97, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .column-1,
   .column-2,
@@ -382,7 +382,7 @@
 .row:last-child {
   margin-bottom: 0; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 960px) {
   /* line 142, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_grid.scss */
   .row {
     margin-bottom: 0; }
@@ -412,9 +412,9 @@
   color: white;
   height: 20vh; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 960px) {
   /* line 12, /Users/milenabaeza/Documents/milebza.github.io/scss/layout/_footer.scss */
-  section.footer {
+  body section.footer {
     height: 80px; } }
 
 /* PAGES */
@@ -488,7 +488,7 @@
       color: #12aab0;
       text-decoration: none; }
 
-@media screen and (max-width: 953px) {
+@media screen and (max-width: 960px) {
   /* line 44, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   section.about {
     height: auto; }
@@ -502,23 +502,7 @@
   /* line 57, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
   div.about__content div.about__content__text p.about__content__text--last-p {
     padding: 0 20px 20px 20px; }
-  /* Change grid */
-  /* line 63, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
-  div.column-6 {
-    float: none;
-    width: auto; }
-  /* line 68, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
-  div.column + div.column {
-    margin-left: 0; }
-  /* line 72, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
-  div.row {
-    margin-bottom: 0; }
-  /* line 75, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
-  div.column {
-    margin-bottom: 10px; }
-  /* line 78, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_about.scss */
-  div.row:last-child .column:last-child {
-    margin-bottom: 0; } }
+  /* Change grid */ }
 
 /* Projects */
 /* line 3, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
@@ -569,7 +553,7 @@
       background-color: rgba(243, 231, 129, 0.8);
       color: #181517; }
 
-@media screen and (max-width: 680px) and (max-height: 550px) {
+@media screen and (max-width: 960px) and (max-height: 550px) {
   /* line 51, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   section.projects {
     height: 500px; }
@@ -577,7 +561,7 @@
   section.projects div.projects__content div.projects__content__item {
     padding: 10px; } }
 
-@media screen and (max-width: 680px) and (min-height: 550px) {
+@media screen and (max-width: 960px) and (min-height: 550px) {
   /* line 61, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects.scss */
   section.projects div.projects__content div.projects__content__item {
     padding: 10px; } }
@@ -614,7 +598,7 @@
         width: 100%;
         border: 1px solid red; }
 
-@media screen and (max-width: 680px) and (max-height: 550px) {
+@media screen and (max-width: 960px) and (max-height: 550px) {
   /* line 39, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_projects-carousel-frontend.scss */
   div.js-open-projc-frontend {
     height: 500px; }
@@ -660,7 +644,7 @@
       .contact__links ul li a:hover {
         color: #dbc715; }
 
-@media screen and (max-width: 953px) {
+@media screen and (max-width: 960px) {
   /* line 47, /Users/milenabaeza/Documents/milebza.github.io/scss/pages/_contact.scss */
   section.contact {
     height: 500px; }

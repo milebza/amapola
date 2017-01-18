@@ -5,11 +5,11 @@
     @include flex-box-center;
     @include background-cover(bottom, $background-image--cropped2);
     color: $main-white;
-    height: $footer-height;
+    height: 20vh;
 }
 
 @media screen and (max-width: $max-width) {
-    section.footer {
-        height: $footer-height-mobile;
+    body section.footer {
+        height: 80px;
     }
 }
