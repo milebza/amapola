@@ -1,6 +1,6 @@
 /* Projects Carousel */
 
-.js-open-projc-frontend {
+.projects__carousel {
     display: none;
     position: absolute;
     z-index: 99;
@@ -36,11 +36,11 @@
 }
 
 @media screen and (max-width:$max-width) and (max-height:$max-height) {
-    div.js-open-projc-frontend {
+    div.projects__carousel {
         height: 500px;
     }
     
-    div.js-open-projc-frontend section.projects__carousel__frontend {
+    div.projects__carousel section.projects__carousel__frontend {
         height: 500px;
     }
 }

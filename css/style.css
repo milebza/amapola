@@ -26,6 +26,15 @@
   justify-content: center;
   flex: 1 1 auto; }
 
+.slide {
+  width: 750px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: white; }
+
+.carousel {
+  display: none; }
+
 /* COMPONENTS */
 /* Toggle */
 .toggle-hamburger {
@@ -476,7 +485,7 @@
     padding: 10px; } }
 
 /* Projects Carousel */
-.js-open-projc-frontend {
+.projects__carousel {
   display: none;
   position: absolute;
   z-index: 99;
@@ -486,25 +495,25 @@
   text-align: center;
   background-color: rgba(24, 21, 23, 0.5);
   height: 100vh; }
-  .js-open-projc-frontend .projects__carousel__frontend {
+  .projects__carousel .projects__carousel__frontend {
     height: 100vh;
     display: flex;
     flex-flow: column; }
-    .js-open-projc-frontend .projects__carousel__frontend__button-wrapper {
+    .projects__carousel .projects__carousel__frontend__button-wrapper {
       flex: 0 1 50px; }
-      .js-open-projc-frontend .projects__carousel__frontend__button-wrapper .x-button {
+      .projects__carousel .projects__carousel__frontend__button-wrapper .x-button {
         float: right; }
-    .js-open-projc-frontend .projects__carousel__frontend__wrapper {
+    .projects__carousel .projects__carousel__frontend__wrapper {
       flex: 1 1 auto; }
-      .js-open-projc-frontend .projects__carousel__frontend__wrapper__content {
+      .projects__carousel .projects__carousel__frontend__wrapper__content {
         background-color: rgba(255, 255, 255, 0.2);
         width: 100%;
         border: 1px solid red; }
 
 @media screen and (max-width: 960px) and (max-height: 550px) {
-  div.js-open-projc-frontend {
+  div.projects__carousel {
     height: 500px; }
-  div.js-open-projc-frontend section.projects__carousel__frontend {
+  div.projects__carousel section.projects__carousel__frontend {
     height: 500px; } }
 
 /* Contact */

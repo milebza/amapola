@@ -31,22 +31,40 @@ $(document).ready(function() {
     $('.js-toggle').click(function(e) {
         e.preventDefault();
         if ($(this).hasClass('is-active') === true) {
-            $(this).removeClass("is-active")
-            $(this).parent().find('.header__nav__menu').slideUp(500);
+            $(this).removeClass('is-active');
+            $(this).parent().find('.js-menu').slideUp(500);
         } else {
             $(this).addClass('is-active');
-            $(this).parent().find('.header__nav__menu').slideDown(500);
+            $(this).parent().find('.js-menu').slideDown(500);
         }
     });
     
     
-    //-----------------------------
-    //  Open carousel frontend
-    //-----------------------------
+    //-----------------
+    //  Open carousel
+    //-----------------
     
-    $('.js-projc-frontend').click(function(e) {
+    $('.js-projc').click(function(e) {
         e.preventDefault();
-        $('.js-open-projc-frontend').show();
+        $('.js-open-carousel').show();
+        var type = $(this).attr('data-type');
+        switch(type) {
+            case 'js-frontend':
+                $('.js-frontend').show();
+                $('.js-visual-comp').hide();
+                $('.js-group-projct').hide();
+                break;
+            case 'js-visual-comp':
+                $('.js-visual-comp').show();
+                $('.js-frontend').hide();
+                $('.js-group-projct').hide();
+                break;
+            case 'js-group-projct':
+                $('.js-group-projct').show();
+                $('.js-frontend').hide();
+                $('.js-visual-comp').hide();
+                break;
+        }
     });
     
     
@@ -56,7 +74,7 @@ $(document).ready(function() {
     
     $('.js-close').click(function(e) {
         e.preventDefault();
-        $('.js-open-projc-frontend').hide();
+        $('.js-open-carousel').hide();
     });
     
     

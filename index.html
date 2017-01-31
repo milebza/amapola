@@ -16,9 +16,12 @@
         <!-- Custom style -->
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         
+        <!-- Icon -->
+        <link rel="icon" href="assets/favicon.png">
+        
         <meta charset="UTF-8">
         <meta name="description" content="Milena's website, Junior Frontend developer">
-        <meta name="keywords" content="Junior,Frontend,developer,web developer,web design, Milena Baeza">
+        <meta name="keywords" content="junior developer, frontend developer, web developer, web design, Milena Baeza">
         <meta name="author" content="Milena Baeza">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +42,7 @@
                     <span>toggle menu</span>
                 </button>
                 
-                <div class="header__nav__menu">
+                <div class="header__nav__menu js-menu">
                     <ul class="header__nav__menu__links">
                         <li><a class="js-scroll-to" data-page=".about" href="#">About</a></li>
                         <li><a class="js-scroll-to" data-page=".projects" href="#">Projects</a></li>
@@ -68,7 +71,7 @@
                     <div class="row">
                         <div class="about__content__picture column column-6">
                             <div class="about__content__picture__frame">
-                                <img src="/assets/profile.jpg" alt="Profile picture">
+                                <img src="/assets/profile_animation.gif" alt="Profile picture">
                             </div>    
                         </div>
                         <div class="about__content__text column column-6">
@@ -88,38 +91,122 @@
             <div class="flex-box">
                 <div class="projects__content container">
                     <div class="row">
-                        <div class="projects__content__item column column-12"><span class="js-projc-frontend">FRONTEND</span></div>
+                        <div class="projects__content__item column column-12"><span class="js-projc" data-type="js-frontend">FRONTEND</span></div>
                     </div>
                     <div class="row">
-                        <div class="projects__content__item column column-12"><span>VISUAL COMPOSITIONS</span></div>
+                        <div class="projects__content__item column column-12"><span class="js-projc" data-type="js-visual-comp">VISUAL COMPOSITIONS</span></div>
                     </div>
                     <div class="row">
-                        <div class="projects__content__item column column-12"><span>GROUP PROJECT</span></div>
+                        <div class="projects__content__item column column-12"><span class="js-projc" data-type="js-group-projct">GROUP PROJECT</span></div>
                     </div>
                 </div>
                 
-                
-                <div class="js-open-projc-frontend">
-        <section class="projects__carousel__frontend">
-            <div class="projects__carousel__frontend__button-wrapper js-close">
-                <button class="x-button">
-                    <span>x button</span>
-                </button> 
-            </div>
-<!--            <span class="projects__carousel__frontend__button--close js-close"><i class="fa fa-times fa-2x fa-fw" aria-hidden="true"></i></span>-->
-            <div class="projects__carousel__frontend__wrapper flex-box">
-                <div class="projects__carousel__frontend__wrapper__content">
-                    <div class="fade">
-                        <div>working on it :)</div>
-                        <div>2 :P</div>
-                        <div>3 :D</div>
-                        <div>4!</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </div>
-                
+                <!-- Frontend projects -->
+                <div class="projects__carousel js-open-carousel">
+                    <section class="projects__carousel__frontend">
+                        <div class="projects__carousel__frontend__button-wrapper js-close">
+                            <button class="x-button">
+                                <span>x button</span>
+                            </button> 
+                        </div>
+                        
+                        <div class="projects__carousel__frontend__wrapper flex-box">
+                            <div class="projects__carousel__frontend__wrapper__content">
+                                <div class="fade js-frontend carousel">
+                                    <!-- Frontend -->
+                                    <div>
+                                        <div class="slide container">
+                                            <div class="row">Moonlight</div>
+                                            <div class="row">
+                                                <div class="column column-6">A simple 3 column theme for tumblr. Languages: HTML, CSS, jQuery, Tumblr system of block and variables.</div>
+                                                <div class="column column-6"><a target="_blank" href="https://github.com/milebza/moonlight"><i class="fa fa-github fa-2x fa-fw"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide container">
+                                            <div class="row">My custom site</div>
+                                            <div class="row">
+                                                <div class="column column-6">The site I made for myself, the one you're seeing now! Languages: HTML, CSS (Sass), jQuery</div>
+                                                <div class="column column-6"><a target="_blank" href="https://github.com/milebza/milebza.github.io"><i class="fa fa-github fa-2x fa-fw"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide container">
+                                            <div class="row">Already having ideas for my next project :D</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end fade -->
+                                <div class="fade js-visual-comp carousel">
+                                    <!-- Visual Compositions -->
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row">I gather small things of my daily life and combine their colors, lettering and shapes. What you'll see next is a collection of my favorites.</div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_01.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_02.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_03.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_04.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_05.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_06.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_07.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_08.jpg"></div>
+                                        </div>   
+                                    </div>
+                                    <div>    
+                                        <div class="slide container">
+                                            <div class="row"><img src="assets/visual_compositions/collage_09.jpg"></div>
+                                        </div>   
+                                    </div>
+                                </div> <!-- end fade -->
+                                <div class="fade js-group-projct carousel">
+                                    <!-- Group project -->
+                                    <div>
+                                        <div class="slide container">
+                                            <div class="row">Mr. Spoqui</div>
+                                            <div class="row">
+                                                <div class="column column-6">A five year long project I made with my siblings.</div>
+                                                <div class="column column-6"><a target="_blank" href="http://mrspoqui.blogspot.pt/"><img src="assets/mrspoqui.png"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end fade -->
+                            </div> <!-- projects__carousel__frontend__wrapper__content -->
+                        </div> <!-- projects__carousel__frontend__wrapper -->
+                    </section>
+                </div> <!-- end projects__carousel -->
             </div>
         </section>
         
