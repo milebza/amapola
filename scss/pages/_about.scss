@@ -3,19 +3,14 @@
 .about {
     @include section($main-white);
     
-    height: 100vh;
-    
-    display: flex;
-    flex-flow: column;
-    
     h1 {
         @include title;
-        flex: 0 1 142px;
     }
     
     &__content {
         line-height: 1.7em;
         font-size: 1.1em;
+        padding: 60px 0 70px;
         
         &__picture__frame {
             text-align: center;
@@ -29,32 +24,27 @@
         p {
             text-align: justify;
             padding: 0 100px 10px 0;
+            
+            @media(max-width:$max-width) {
+                text-align: center;
+                padding: 0 20px 10px 20px;
+            }
         }
         
+        p.about__content__text--last-p {
             
-            a {
-                color: $blue-green;
-                text-decoration: none;
+            @media(max-width:$max-width) {
+                padding: 0 20px 20px 20px;
             }
-    }
-}
-
-@media screen and (max-width:$max-width) {
-
-    section.about {
-        height: auto;
-    }
-    
-    section.about h1 {
-        padding-bottom: 20px;
-    }
-    
-    div.about__content div.about__content__text p {
-        text-align: center;
-        padding: 0 20px 10px 20px;
-    }
-    
-    div.about__content div.about__content__text p.about__content__text--last-p {
-        padding: 0 20px 20px 20px;
+        }
+            
+        a {
+            color: $blue-green;
+            text-decoration: none;
+        }
+        
+        @media(max-width:$max-width) {
+            padding: 40px 0;
+        }
     }
 }

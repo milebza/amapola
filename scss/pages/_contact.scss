@@ -2,57 +2,45 @@
 
 .contact {
     @include section($main-white);
-    background-color: $main-white;
-    
-    height: 70vh;
-    
-    display: flex;
-    flex-flow: column;
     
     h1 {
         @include title;
-        
-        flex: 0 1 142px;
-    }
-
-    &--last-p {
-        margin-bottom: 40px;
     }
     
-    &__links {
-        line-height: 1.1em;
-        font-size: 1.1em;
+    &__info {
+        padding: 40px 0 90px;
         
-        ul {
-            
-            li {
-                display: inline;
-                padding: 10px;
+        &__email {
+            display: block;
+            color: $blue-green;
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
 
-                a {
-                    color: $main-black;
-                    @include transition-color;    
-                }
+        &__links {
+            line-height: 1.1em;
+            font-size: 1.1em;
 
-                a:hover {
-                    color: $dark-yellow;
+            ul {
+
+                li {
+                    display: inline;
+                    padding: 10px;
+
+                    a {
+                        color: $main-black;
+                        @include transition-color;    
+                    }
+
+                    a:hover {
+                        color: $dark-yellow;
+                    }
+                    
+                    @media(max-width:$max-width) {
+                        display: block;
+                    }
                 }
             }
-        }
-    }
-}
-
-@media screen and (max-width:$max-width) {
-    
-    section.contact {
-        height: 500px;
-    }
-    
-    section.contact h1 {
-        padding-bottom: 20px;
-    }
-    
-    div.contact__links ul li {
-        display: block;
+        } 
     }
 }
