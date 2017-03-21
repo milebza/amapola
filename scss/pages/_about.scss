@@ -10,14 +10,21 @@
     &__content {
         line-height: 1.7em;
         font-size: 1.1em;
-        padding: 60px 0 70px;
+        padding-top: 60px;
+        padding-bottom: 70px;
         
-        &__picture__frame {
-            text-align: center;
-            img {
-                width: 65%;
-                height: 65%;
-                border-radius: 50%;
+        &__picture{
+            &__frame {
+                text-align: center;
+                img {
+                    width: 65%;
+                    height: 65%;
+                    border-radius: 50%;
+                }
+            }
+            
+            @media(max-width:$max-width) {
+                margin-bottom: 20px;
             }
         }
         
@@ -44,7 +51,8 @@
         }
         
         @media(max-width:$max-width) {
-            padding: 40px 0;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
     }
 }

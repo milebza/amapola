@@ -47,6 +47,10 @@
             float: right;
             margin-right: 7px;
             display: none;
+            
+            @media(max-width:$max-width) {
+                display: block;
+            }
         }
         
         &__menu {
@@ -78,41 +82,36 @@
                         background-color: $main-white;
                         color: $main-black;
                     }
+                    
+                    @media(max-width:$max-width) {
+                        display: block;
+                        text-align: right;
+                        padding: 0 5px 0 0;
+                    }
                 }
                 
                 li.header__nav__menu__links__github {
                     font-size: 14px;
                     text-align: center;
                     padding: 0;
+                    
                     a:hover {
                         border-bottom: solid 2px transparent;
                     }
+                    
+                    @media(max-width:$max-width) {
+                        display: block;
+                        text-align: right;
+                        padding: 0 5px 0 0;
+                    }
                 }
+            }
+            
+            @media(max-width:$max-width) {
+                background-color: $transparent-white;
+                width: 100%;
+                display: none;
             }
         }
     }    
-}
-
-@media screen and (max-width:$max-width) {
-    .header div.header__nav__menu {
-        background-color: $transparent-white;
-        width: 100%;
-        display: none;
-    }
-    
-    .header__nav__menu ul.header__nav__menu__links li {
-        display: block;
-        text-align: right;
-        padding: 0 5px 0 0;
-    }
-    
-    .header__nav__menu ul.header__nav__menu__links li.header__nav__menu__links__github {
-        display: block;
-        text-align: right;
-        padding: 0 5px 0 0;
-    }
-    
-    .header nav.header__nav button.header__nav--toggle {
-        display: block;
-    }
 }

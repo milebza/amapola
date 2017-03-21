@@ -122,6 +122,17 @@
 
 .container {
     padding: 20px;
+    
+    // > 992px
+    @media(min-width:$min-width-md) {
+        margin: 0 auto;
+        width: 970px;
+    }
+    
+    // > 768px
+    @media(min-width:$min-width-sm) {
+        width: auto;
+    }
 }
 
 .column {
@@ -138,7 +149,7 @@
     margin-bottom: 0;
 }
 
-@media screen and (max-width:$max-width) {
+@media(max-width:$max-width) {
     .row {
         margin-bottom: 0;
     }

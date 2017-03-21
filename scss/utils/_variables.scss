@@ -20,7 +20,7 @@ $more-transparent-white: rgba(255, 255, 255, 0.2);
 
 /* Yellow */
 $pale-yellow: rgb(243, 231, 129);
-$dark-yellow: rgb(219, 199, 21);
+$dark-yellow: rgb(244, 229, 66);
 $transparent-pale-yellow: rgba(243, 231, 129, 0.8);
 
 /* Black */
@@ -55,4 +55,8 @@ $background-image--cropped2: "/assets/background_cropped2.jpg";
 //-----------------
 
 $max-width: 960px;
+
+$min-width-md: 992px;
+$min-width-sm: 768px;
+
 $max-height: 550px;

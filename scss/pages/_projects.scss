@@ -1,32 +1,21 @@
 /* Projects */
 
 .projects {
-    @include section($dark-grey-blue);
     @include background-cover(bottom, $background-image--cropped);
     
     position: relative;
     
-    height: 100vh;
-    
-    display: flex;
-    flex-flow: column;
-    
     h1 {
         @include title;
         //border: 3px solid purple;
-        flex: 0 1 142px;
-        
-        /********************
-            flex-grow: 0,
-            flex-shrink: 1,
-            flex-basis: 142px
-        *********************/
     }
     
     &__content {
         line-height: 1.1em;
         font-size: 1.1em;
-        width: 100%;
+        
+        padding-top: 60px;
+        padding-bottom: 90px;
         
         //border: 1px solid red;
         
@@ -44,21 +33,13 @@
             background-color: $transparent-pale-yellow;
             color: $main-black;
         }
-    }
-}
-
-@media screen and (max-width:$max-width) and (max-height:$max-height) {
-    section.projects {
-        height: 500px;
-    }
-    
-    section.projects div.projects__content div.projects__content__item {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width:$max-width) and (min-height:$max-height) {
-    section.projects div.projects__content div.projects__content__item {
-        padding: 10px;
+        
+        &__item {
+            text-align: center;
+            @media(max-width:$max-width) {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+        }
     }
 }
