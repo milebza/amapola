@@ -7,7 +7,6 @@
     
     h1 {
         @include title;
-        //border: 3px solid purple;
     }
     
     &__content {
@@ -16,8 +15,6 @@
         
         padding-top: 60px;
         padding-bottom: 90px;
-        
-        //border: 1px solid red;
         
         span {
             display: inline-block;

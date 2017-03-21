@@ -320,13 +320,10 @@
 
 .container {
   padding: 20px; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .container {
       margin: 0 auto;
-      width: 970px; } }
-  @media (min-width: 768px) {
-    .container {
-      width: auto; } }
+      width: 1200px; } }
 
 .column {
   padding: 5px;
@@ -412,6 +409,8 @@
       .about__content__picture__frame img {
         width: 65%;
         height: 65%;
+        max-width: 450px;
+        max-height: 450px;
         border-radius: 50%; }
     @media (max-width: 960px) {
       .about__content__picture {

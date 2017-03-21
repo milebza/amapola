@@ -123,15 +123,9 @@
 .container {
     padding: 20px;
     
-    // > 992px
-    @media(min-width:$min-width-md) {
+    @media(min-width:$min-width-lg) {
         margin: 0 auto;
-        width: 970px;
-    }
-    
-    // > 768px
-    @media(min-width:$min-width-sm) {
-        width: auto;
+        width: 1200px;
     }
 }
 
