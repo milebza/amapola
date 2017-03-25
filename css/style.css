@@ -466,12 +466,17 @@
   visibility: hidden;
   position: fixed;
   top: 20px;
-  left: 20px;
   z-index: 99;
   width: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: aquamarine;
   opacity: 0;
   transition: 400ms ease-in-out; }
+  @media (max-width: 960px) {
+    .carousel {
+      width: 80%; } }
 
 .carousel-background {
   visibility: hidden;
