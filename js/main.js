@@ -1,8 +1,6 @@
 /************************** 
 
-    JavaScript (jQuery) for
-    
-    Milena Baeza's website
+    JavaScript (jQuery)
 
 ***************************/
 
@@ -19,10 +17,8 @@ function addBottomShadow() {
     }
 }
 
-$(window).scroll(addBottomShadow);
-
-
 $(document).ready(function() {
+    $(window).scroll(addBottomShadow);
     
     //-----------------------------
     //  Open/close mobile menu
@@ -46,35 +42,20 @@ $(document).ready(function() {
     
     $('.js-projc').click(function(e) {
         e.preventDefault();
-        $('.js-open-carousel').show();
         var type = $(this).attr('data-type');
-        switch(type) {
-            case 'js-frontend':
-                $('.js-frontend').show();
-                $('.js-visual-comp').hide();
-                $('.js-group-projct').hide();
-                break;
-            case 'js-visual-comp':
-                $('.js-visual-comp').show();
-                $('.js-frontend').hide();
-                $('.js-group-projct').hide();
-                break;
-            case 'js-group-projct':
-                $('.js-group-projct').show();
-                $('.js-frontend').hide();
-                $('.js-visual-comp').hide();
-                break;
-        }
+        $('.'+type).addClass('visible');
+        $('.js-backgr').addClass('visible');
     });
     
     
-    //-----------------------------
+    //-----------------
     //  Close carousel
-    //-----------------------------
+    //-----------------
     
-    $('.js-close').click(function(e) {
+    $('.js-backgr').click(function(e) {
         e.preventDefault();
-        $('.js-open-carousel').hide();
+        $('.js-carousel').removeClass('visible');
+        $(this).removeClass('visible');
     });
     
     
@@ -90,9 +71,9 @@ $(document).ready(function() {
     });
     
     
-    //-------------------
-    //  Slick (Carousel)
-    //-------------------
+    //-----------------------------
+    //  Initialize slick (carousel)
+    //-----------------------------
     
     $('.fade').slick({
         dots: true,

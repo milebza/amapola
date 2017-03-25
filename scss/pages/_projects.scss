@@ -3,8 +3,6 @@
 .projects {
     @include background-cover(bottom, $background-image--cropped);
     
-    position: relative;
-    
     h1 {
         @include title;
     }
