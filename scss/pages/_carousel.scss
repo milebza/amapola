@@ -5,18 +5,67 @@
     position: fixed;
     top: 20px;
     z-index: 99;
-    width: 700px;
+    
+    width: 80%;
+    max-width: 850px;
     
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
-    background-color: aquamarine;
     opacity: 0;
     transition: 400ms ease-in-out;
+    
+    .slide {
+        text-align: center;
+        
+        .row {
+            background-color: $main-white;
+            
+            .column {
+                padding: 0;
+            }
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            text-transform: uppercase;
+            margin: 40px 0 25px;
+        }
+        
+        a {
+            color: $blue-green;
+            text-decoration: none;
+            padding: 8px;
+            @include transition-color-background-color;
+        }
+        
+        a:hover {
+            color: $main-white;
+            background-color: $blue-green;
+        }
 
-    @media(max-width: $max-width) {
-        width: 80%;
+        p {
+            line-height: 1.8em;
+            margin-bottom: 20px;
+            
+            small {
+                display: block;
+                font-size: 12px;
+                margin-top: 40px;
+                
+                a {
+                    color: $main-black;
+                    text-decoration: underline;
+                    padding: 0;
+                }
+                
+                a:hover {
+                    color: $main-black;
+                    background-color: inherit;
+                }
+            }
+        }
+        
     }
 }
 
