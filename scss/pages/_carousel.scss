@@ -24,6 +24,10 @@
             .column {
                 padding: 0;
             }
+            
+            .column-4 {
+                padding: 10px;
+            }
         }
         
         h3 {
@@ -63,6 +67,51 @@
                     color: $main-black;
                     background-color: inherit;
                 }
+            }
+        }
+        
+        .only-paragraph {
+            margin: 0;
+            padding: 30px 30px 40px;
+            color: $main-white;
+            background-color: $blue-green;
+        }
+        
+        .mobile-show {
+            display: none;
+        }
+        
+        @media(max-width:$max-width) {
+            .column-4 {
+                color: $main-white;
+                background-color: $blue-green;
+                text-align: left;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                
+                h3, p {
+                    display: inline-block;
+                    margin: 0;
+                }
+                
+                a {
+                    float: right;
+                    display: inline-block;
+                    font-size: 12px;
+                    color: $main-white;
+                    padding: 0;
+                }
+                
+                @include clearfix();
+            }
+            
+            .mobile-hide, p.mobile-hide {
+                display: none;
+            }
+            
+            .mobile-show {
+                display: inline;
             }
         }
         

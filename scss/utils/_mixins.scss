@@ -60,10 +60,10 @@
 //------------------------------
 
 @mixin background-cover($position, $cover-image) {
-    background-color: $transparent-dark-grey-blue;
     background: url($cover-image) no-repeat;
     
     background : {
+        color: $transparent-dark-grey-blue;
         attachment: fixed;
         position: $position center;
     }

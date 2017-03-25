@@ -75,11 +75,12 @@ $(document).ready(function() {
     //  Initialize slick (carousel)
     //-----------------------------
     
-    $('.fade').slick({
+    $('.js-slick').slick({
         dots: true,
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        adaptiveHeight: true
     });
 });

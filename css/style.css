@@ -335,8 +335,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(52, 82, 112, 0.4);
   background: url("/assets/background_cropped2.jpg") no-repeat;
+  background-color: rgba(52, 82, 112, 0.4);
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -349,8 +349,8 @@
 /* PAGES */
 /* Hero */
 .hero {
-  background-color: rgba(52, 82, 112, 0.4);
   background: url("/assets/background.jpg") no-repeat;
+  background-color: rgba(52, 82, 112, 0.4);
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
@@ -422,8 +422,8 @@
 
 /* Projects */
 .projects {
-  background-color: rgba(52, 82, 112, 0.4);
   background: url("/assets/background_cropped.jpg") no-repeat;
+  background-color: rgba(52, 82, 112, 0.4);
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -487,6 +487,8 @@
       background-color: white; }
       .carousel .slide .row .column {
         padding: 0; }
+      .carousel .slide .row .column-4 {
+        padding: 10px; }
     .carousel .slide h3 {
       font-size: 1.3em;
       text-transform: uppercase;
@@ -515,6 +517,40 @@
         .carousel .slide p small a:hover {
           color: #181517;
           background-color: inherit; }
+    .carousel .slide .only-paragraph {
+      margin: 0;
+      padding: 30px 30px 40px;
+      color: white;
+      background-color: #12aab0; }
+    .carousel .slide .mobile-show {
+      display: none; }
+    @media (max-width: 960px) {
+      .carousel .slide .column-4 {
+        color: white;
+        background-color: #12aab0;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0; }
+        .carousel .slide .column-4 h3, .carousel .slide .column-4 p {
+          display: inline-block;
+          margin: 0; }
+        .carousel .slide .column-4 a {
+          float: right;
+          display: inline-block;
+          font-size: 12px;
+          color: white;
+          padding: 0; }
+        .carousel .slide .column-4:before,
+        .carousel .slide .column-4:after {
+          content: " ";
+          display: table; }
+        .carousel .slide .column-4:after {
+          clear: both; }
+      .carousel .slide .mobile-hide, .carousel .slide p.mobile-hide {
+        display: none; }
+      .carousel .slide .mobile-show {
+        display: inline; } }
 
 .carousel-background {
   visibility: hidden;
