@@ -345,6 +345,9 @@
   -o-background-size: cover;
   color: white;
   height: 100px; }
+  .footer span {
+    text-align: center;
+    padding: 10px; }
 
 /* PAGES */
 /* Hero */
@@ -481,6 +484,9 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: 400ms ease-in-out; }
+  @media (max-width: 960px) {
+    .carousel {
+      width: 95%; } }
   .carousel .slide {
     text-align: center; }
     .carousel .slide .row {

@@ -5,4 +5,9 @@
     @include background-cover(bottom, $background-image--cropped2);
     color: $main-white;
     height: 100px;
+    
+    span {
+        text-align: center;
+        padding: 10px;
+    }
 }

@@ -15,6 +15,10 @@
     opacity: 0;
     transition: 400ms ease-in-out;
     
+    @media(max-width:$max-width) {
+        width: 95%;
+    }
+    
     .slide {
         text-align: center;
         
