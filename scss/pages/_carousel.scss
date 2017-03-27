@@ -12,12 +12,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+	
     opacity: 0;
     transition: 400ms ease-in-out;
-    
-    @media(max-width:$max-width) {
-        width: 95%;
-    }
+	
+	@media(max-width:$max-width) {
+		width: 90%;
+		max-width: 600px;
+	}
     
     .slide {
         text-align: center;
@@ -25,12 +27,19 @@
         .row {
             background-color: $main-white;
             
-            .column {
-                padding: 0;
+            .col {
+				position: relative;
+				float: left;
+				display: block;
             }
             
-            .column-4 {
-                padding: 10px;
+            .col-4 {
+				width: 33.33333332%;
+                padding: 15px 15px 15px 15px;
+            }
+			
+			.col-8 {
+				width: 66.66666664%;
             }
         }
         
@@ -54,7 +63,7 @@
 
         p {
             line-height: 1.8em;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
             
             small {
                 display: block;
@@ -86,7 +95,15 @@
         }
         
         @media(max-width:$max-width) {
-            .column-4 {
+			
+			.row {
+				.col-4, 
+				.col-8 {
+					float: none;
+					width: auto;
+				}
+			}
+            .col-4 {
                 color: $main-white;
                 background-color: $blue-green;
                 text-align: left;

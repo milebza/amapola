@@ -486,15 +486,21 @@
   transition: 400ms ease-in-out; }
   @media (max-width: 960px) {
     .carousel {
-      width: 95%; } }
+      width: 90%;
+      max-width: 600px; } }
   .carousel .slide {
     text-align: center; }
     .carousel .slide .row {
       background-color: white; }
-      .carousel .slide .row .column {
-        padding: 0; }
-      .carousel .slide .row .column-4 {
-        padding: 10px; }
+      .carousel .slide .row .col {
+        position: relative;
+        float: left;
+        display: block; }
+      .carousel .slide .row .col-4 {
+        width: 33.33333332%;
+        padding: 15px 15px 15px 15px; }
+      .carousel .slide .row .col-8 {
+        width: 66.66666664%; }
     .carousel .slide h3 {
       font-size: 1.3em;
       text-transform: uppercase;
@@ -511,7 +517,7 @@
       background-color: #12aab0; }
     .carousel .slide p {
       line-height: 1.8em;
-      margin-bottom: 20px; }
+      margin-bottom: 28px; }
       .carousel .slide p small {
         display: block;
         font-size: 12px;
@@ -531,27 +537,31 @@
     .carousel .slide .mobile-show {
       display: none; }
     @media (max-width: 960px) {
-      .carousel .slide .column-4 {
+      .carousel .slide .row .col-4,
+      .carousel .slide .row .col-8 {
+        float: none;
+        width: auto; }
+      .carousel .slide .col-4 {
         color: white;
         background-color: #12aab0;
         text-align: left;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0; }
-        .carousel .slide .column-4 h3, .carousel .slide .column-4 p {
+        .carousel .slide .col-4 h3, .carousel .slide .col-4 p {
           display: inline-block;
           margin: 0; }
-        .carousel .slide .column-4 a {
+        .carousel .slide .col-4 a {
           float: right;
           display: inline-block;
           font-size: 12px;
           color: white;
           padding: 0; }
-        .carousel .slide .column-4:before,
-        .carousel .slide .column-4:after {
+        .carousel .slide .col-4:before,
+        .carousel .slide .col-4:after {
           content: " ";
           display: table; }
-        .carousel .slide .column-4:after {
+        .carousel .slide .col-4:after {
           clear: both; }
       .carousel .slide .mobile-hide, .carousel .slide p.mobile-hide {
         display: none; }
