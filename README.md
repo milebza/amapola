@@ -4,5 +4,5 @@
 
 _Languages used_
 
-HTML, CSS (Sass), JavaScript (jQuery).
+HTML, CSS (Sass), JavaScript (jQuery), Gulp.
 No css framework was used. 
