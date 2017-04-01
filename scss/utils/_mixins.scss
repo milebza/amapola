@@ -69,9 +69,6 @@
     }
     
     background-size:cover;
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 
 
@@ -81,8 +78,6 @@
 
 @mixin transition-color-background-color() {
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
-    -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
-    -moz-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 
@@ -92,6 +87,4 @@
 
 @mixin transition-color() {
     transition: color 200ms ease-in-out;
-    -webkit-transition: color 200ms ease-in-out;
-    -moz-transition: color 200ms ease-in-out;
 }

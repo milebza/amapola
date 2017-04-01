@@ -2,14 +2,17 @@
 
 
 //----------------------
-//  Add a bottom shadow
+//  Adds a bottom shadow
 //----------------------
 
 .bottom-shadow {
     box-shadow: 0px 3px 5px $shadow-color;
-    -webkit-box-shadow: 0px 3px 5px $shadow-color;
-    -moz-box-shadow: 0px 3px 5px $shadow-color;
 }
+
+
+//----------------------------------
+//  Image with full width and height
+//----------------------------------
 
 .img-100 {
     width: 100%;
