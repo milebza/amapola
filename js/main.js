@@ -6,7 +6,7 @@
 
 
 //-----------------------
-//  Add a bottom shadow
+//  Adds a bottom shadow
 //-----------------------
 
 function addBottomShadow() {
