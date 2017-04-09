@@ -2,7 +2,7 @@
 
 .projects {
     @include background-cover(bottom, $background-image--cropped);
-    padding-top: 20px;
+    padding-top: 50px;
     
     h1 {
         @include title;
@@ -12,8 +12,8 @@
         line-height: 1.1em;
         font-size: 1.1em;
         
-        padding-top: 70px;
-        padding-bottom: 140px;
+        padding-top: 140px;
+        padding-bottom: 200px;
         
         span {
             text-transform: uppercase;

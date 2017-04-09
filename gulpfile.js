@@ -48,7 +48,7 @@ gulp.task('stylelint', function() {
 
 // Compile javascript
 gulp.task('scripts', function() {
-    return gulp.src('js/main.js')
+    return gulp.src('js/**/*.js')
         .pipe($.include().on('error', function(error) {
             $.util.log($.util.colors.red(error.message));
             this.emit('end');

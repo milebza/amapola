@@ -67,11 +67,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: darkgrey;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: 0;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -201,4 +201,22 @@
 {
     opacity: .75;
     color: black;
+}
+
+@media (max-width: 700px) {
+	button.slick-arrow {
+		display: none !important;
+	}
+	
+	.slick-dots {
+		bottom: -20px;
+	}
+	
+	.slick-dots li button:before {
+		color: darkgrey;
+	}
+	
+	.slick-dots li.slick-active button:before {
+		color: darkgrey;
+	}
 }
