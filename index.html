@@ -20,8 +20,8 @@
         <link rel="icon" href="assets/favicon.png">
 
         <meta charset="UTF-8">
-        <meta name="description" content="Junior developer and amateur artist">
-        <meta name="keywords" content="junior developer, frontend developer, web developer, web design, Milena Baeza">
+        <meta name="description" content="Amateur artist and professional developer">
+        <meta name="keywords" content="frontend developer, web developer, web design, Milena Baeza">
         <meta name="author" content="Milena Baeza">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,18 +48,18 @@
         <!-- HEADER -->
         <header class="header">
             <nav class="header__nav">
-                <a class="header__nav__author js-scroll-to" data-page=".top" href="#">Milena Baeza</a>
+                <a class="header__author js-scroll-to" data-page=".top" href="#">Milena Baeza</a>
 
                 <button class="header__nav--toggle js-toggle toggle-hamburger toggle-hamburger--x">
                     <span>toggle menu</span>
                 </button>
 
-                <div class="header__nav__menu js-menu">
-                    <ul class="header__nav__menu__links">
+                <div class="header__menu js-menu">
+                    <ul class="header__links">
                         <li><a class="js-scroll-to" data-page=".about" href="#">About</a></li>
-                        <li><a class="js-scroll-to" data-page=".projects" href="#">Projects</a></li>
+                        <li><a class="js-scroll-to" data-page=".projects" href="#">Portfolio</a></li>
                         <li><a class="js-scroll-to" data-page=".contact" href="#">Contact</a></li>
-                        <li class="header__nav__menu__links__github"><a target="_blank" href="https://github.com/milebza"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
+                        <li class="header__github"><a target="_blank" href="https://github.com/milebza"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -68,9 +68,9 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero__content">
-                <h1 class="hero__content__title">Hello there!</h1>
-                <div class="hero__content__text">
-                    <p>I'm Milena, a junior developer having fun exploring the Frontend world!</p>
+                <h1 class="hero__title">Milena</h1>
+                <div class="hero__text">
+                    <p>Amateur artist and professional developer</p>
                 </div>
             </div>
         </section>
@@ -80,16 +80,16 @@
             <h1>About</h1>
                 <div class="about__content container">
                     <div class="row">
-                        <div class="about__content__picture column column-6">
-                            <div class="about__content__picture__frame">
-                                <img src="/assets/profile_animation.gif" alt="Profile picture">
+                        <div class="about__picture column column-6">
+                            <div class="about__frame">
+                                <img src="assets/profile_animation.gif" alt="Profile picture">
                             </div>
                         </div>
-                        <div class="about__content__text column column-6">
-                            <p>I'm an amateur artist and junior developer from Lisbon.</p>
-                            <p>After finishing an intense 3 months Java and Javascript bootcamp at <a class="" href="http://www.academiadecodigo.org/" target="_blank">‹Academia de Código_›</a> I started to deepen my knowledge in the unknown waters of web development.</p>
-                            <p>It's a vast world, always changing with new technology and tools being released but I'm confident that combining my different skills I'll grow and improve fast in this field. I'm motivated to learn and create, my artistic path helped me acquired an eye for detail and I have Google by my side.</p>
-                            <p class="about__content__text--last-p">Currently I'm searching for a position as frontend developer. If you want to know more about my academic and professional experience head over to my <a class="" href="assets/cv-mile.pdf" target="_blank">curriculum vitae</a>!</p>
+                        <div class="about__text column column-6">
+                            <p>I'm Milena Baeza, an amateur artist and junior developer from Lisbon.</p>
+                            <p>After finishing an intense 3 months Java and Javascript bootcamp at <a class="about__link" href="http://www.academiadecodigo.org/" target="_blank">‹Academia de Código_›</a> I started to deepen my knowledge in the unknown waters of web development.</p>
+                            <p>It's a vast world, always changing with new technology and tools coming out but I'm confident that combining my different skills I'll grow and improve fast in this field. I'm motivated to learn and create, my artistic path helped me acquired an eye for detail and I have Google by my side.</p>
+                            <p class="about__text--last">Currently I'm searching for a position as frontend developer. If you want to know more about my academic and professional experience head over to my <a href="assets/cv-mile.pdf" target="_blank" class="about__link">curriculum vitae</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -97,12 +97,12 @@
 
         <!-- PROJECTS -->
         <section class="projects">
-            <h1>Projects</h1>
+            <h1>Portfolio</h1>
                 <div class="projects__content container">
                     <div class="row">
-                        <div class="projects__content__item column column-4"><span class="js-projc" data-type="js-frontend">Code/Design</span></div>
-                        <div class="projects__content__item column column-4"><span class="js-projc" data-type="js-visual-comp">Visual Compositions</span></div>
-                        <div class="projects__content__item column column-4"><span class="js-projc" data-type="js-group-projct">Group Project</span></div>
+                        <div class="projects__item column column-4"><span class="projects__btn js-projc" data-type="js-frontend">Code/Design</span></div>
+                        <div class="projects__item column column-4"><span class="projects__btn js-projc" data-type="js-visual-comp">Visual Compositions</span></div>
+                        <div class="projects__item column column-4"><span class="projects__btn js-projc" data-type="js-group-projct">Group Project</span></div>
                     </div>
                 </div>
         </section>
@@ -117,8 +117,8 @@
                     <div class="row">
                         <div class="col col-4">
                             <h3>Moonlight</h3>
-                            <p><span class="mobile-hide">A simple customizable</span> theme for tumblr<span class="mobile-hide">. My first frontend project using HTML, CSS, jQuery and Tumblr system of block and variables.</span></p>
-                            <a target="_blank" href="https://github.com/milebza/moonlight"><span class="mobile-hide">See code</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
+                            <p><span class="mobile-hide">A customizable</span> theme for tumblr<span class="mobile-hide">. My first frontend project using HTML, CSS, jQuery and Tumblr system of block and variables. +500 people are using it</span></p>
+							<a target="_blank" href="https://www.tumblr.com/theme/40383" class="carousel__btn"><span class="mobile-hide">Install</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
                         <div class="col col-8"><img class="img-100" src="assets/frontend/moonlight_theme.JPG" alt="Moonlight theme for tumblr"></div>
                     </div>
@@ -127,8 +127,8 @@
                     <div class="row">
                         <div class="col col-4">
                             <h3>My site</h3>
-                            <p class="mobile-hide">The site I made for myself, the one you're seeing now! Languages: HTML, CSS (Sass), jQuery, Gulp. No css framework was used.</p>
-                            <a target="_blank" href="https://github.com/milebza/milebza.github.io"><span class="mobile-hide">See code</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
+                            <p class="mobile-hide">A one page site that talks about me. Languages: HTML, CSS (Sass, BEM), jQuery, Gulp. No css framework was used.</p>
+                            <a target="_blank" href="https://github.com/milebza/milebza.github.io" class="carousel__btn"><span class="mobile-hide">See code</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
                         <div class="col col-8"><img class="img-100" src="assets/frontend/custom_site.jpg" alt="Milena's website"></div>
                     </div>
@@ -143,19 +143,16 @@
                     <div class="row"><p class="only-paragraph">I like to gather small things in my daily life and combine their colors, lettering and shapes. What you'll see next is a collection of my favorites.<br><br>I post them regularly in my blog, among photographs and drawings.</p></div>
                 </div>
                 <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_01.jpg" alt="Visual composition"></div>
-                </div>
-                <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_02.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_03.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_04.jpg" alt="Visual composition"></div>
+                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_09.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_05.jpg" alt="Visual composition"></div>
+                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_04.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_06.jpg" alt="Visual composition"></div>
@@ -167,7 +164,7 @@
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_08.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_09.jpg" alt="Visual composition"></div>
+                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_05.jpg" alt="Visual composition"></div>
                 </div>
             </div>
         </section> <!-- end Carousel Visual compositions -->
@@ -180,7 +177,7 @@
                         <div class="col col-4">
                             <h3>Mr. Spoqui</h3>
                             <p><span class="mobile-hide">A five year long project I made with my siblings.</span><span class="mobile-show">family project</span></p>
-                            <a target="_blank" href="http://mrspoqui.blogspot.pt/"><span class="mobile-hide">See blog</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
+                            <a target="_blank" href="http://mrspoqui.blogspot.pt/" class="carousel__btn"><span class="mobile-hide">See blog</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                             <p class="mobile-hide"><small>&copy; photography by <a href="https://www.matildeviegas.com/" target="_blank">Matilde Viegas</a></small></p>
                         </div>
                         <div class="col col-8"><img class="img-100" src="assets/mrspoqui.jpg" alt="Mr. Spoqui team"></div>
@@ -194,9 +191,9 @@
             <h1>Contact</h1>
             <div class="contact__info">
                 <p>Feel free to email me, whenever!</p><br>
-                <a class="contact__info__email" href="mailto:miibaeza@gmail.com">miibaeza@gmail.com</a>
+                <a class="contact__email" href="mailto:miibaeza@gmail.com">miibaeza@gmail.com</a>
 
-                <div class="contact__info__links">
+                <div class="contact__links">
                     <ul>
                         <li>
                             <a target="_blank" href="https://github.com/milebza"><i class="fa fa-github fa-2x fa-fw"></i></a>
@@ -215,7 +212,7 @@
         </footer>
 
         <!-- jQuery -->
-        <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
         <!-- jQuery easing -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

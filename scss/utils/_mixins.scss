@@ -23,7 +23,7 @@
 
 @mixin title() {
     font: {
-        size: 1.4em;
+        size: 1.6em;
     }
     text: {
         align: center;
@@ -63,7 +63,7 @@
     background: url($cover-image) no-repeat;
     
     background : {
-        color: $transparent-dark-grey-blue;
+        color: $dark-green;
         attachment: fixed;
         position: $position center;
     }

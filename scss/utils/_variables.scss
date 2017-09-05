@@ -16,12 +16,9 @@
 /* White */
 $main-white: rgb(255, 255, 255);
 $transparent-white: rgba(255, 255, 255, 0.7);
-$more-transparent-white: rgba(255, 255, 255, 0.2);
 
 /* Yellow */
-$pale-yellow: rgb(243, 231, 129);
-$dark-yellow: rgb(244, 229, 66);
-$transparent-pale-yellow: rgba(243, 231, 129, 0.8);
+$dark-yellow: rgb(132, 139, 14);
 
 /* Black */
 $main-black: rgb(24, 21, 23);
@@ -29,10 +26,11 @@ $shadow-color: rgba(24, 21, 23, 0.5);
 $dark-shadow: rgba(24, 21, 23, 0.8);
 
 /* Blue */
-$blue-green: rgb(18, 170, 176);
-$dark-grey-blue: rgb(20, 92, 128);
-$transparent-dark-grey-blue: rgba(52, 82, 112, 0.4);
+$green: rgb(115, 177, 52);
+$dark-green: rgb(54, 160, 110);
 
+/* Green */
+$transp-green: rgba(104, 133, 75, 0.4);
 
 //----------
 //  Heights
@@ -46,9 +44,7 @@ $header-height: 50px;
 //  Background image
 //------------------
 
-$background-image: "/assets/background.jpg";
-$background-image--cropped: "/assets/background_cropped.jpg";
-$background-image--cropped2: "/assets/background_cropped2.jpg";
+$background-image: "../../assets/background_rose.jpg";
 
 
 //-----------------

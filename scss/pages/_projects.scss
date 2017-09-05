@@ -1,50 +1,52 @@
 /* Projects */
 
 .projects {
-    @include background-cover(bottom, $background-image--cropped);
+    @include background-cover(bottom, $background-image);
     padding-top: 50px;
-    
+
     h1 {
         @include title;
+		color: $main-white;
     }
-    
+
     &__content {
         line-height: 1.1em;
         font-size: 1.1em;
-        
+
         padding-top: 140px;
         padding-bottom: 200px;
-        
-        span {
-            text-transform: uppercase;
-            display: inline-block;
-            padding: 10px;
-            cursor: pointer;
-            border: 2px solid $main-black;
-            background-color: $more-transparent-white;
-            
-            @include transition-color-background-color;
-        }
-        
-        span:hover {
-            background-color: $transparent-pale-yellow;
-            color: $main-black;
-        }
-        
-        &__item {
-            text-align: center;
-            @media(max-width:$max-width) {
-                padding: 10px;
-                margin-bottom: 15px;
-            }
-        }
-        
+
         @media(max-width:$max-width) {
             padding-top: 60px;
             padding-bottom: 90px;
         }
     }
+	
+	&__item {
+		text-align: center;
+		
+		@media(max-width:$max-width) {
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+	}
+	
     @media(max-width:$max-width) {
         padding-top: 0;
     }
+	
+	&__btn {
+		display: inline-block;
+		padding: 20px;
+		cursor: pointer;
+		border-radius: 30px;
+		color: $main-white;
+		border: 1px solid $main-white;
+		font: {
+			family: Noto serif, serif;
+			size: 1.2em;
+		}
+
+		@include transition-color-background-color;
+	}
 }

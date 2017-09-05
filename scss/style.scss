@@ -9,7 +9,6 @@
 
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'utils/classes';
 
 
 /* COMPONENTS */
@@ -32,8 +31,15 @@
 @import 'pages/projects';
 @import 'pages/contact';
 
+/* CLASSES */
+
+@import 'utils/classes';
+
 
 body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
     font : {
         family: Roboto, sans-serif;
         weight: 300;

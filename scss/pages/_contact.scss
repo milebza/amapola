@@ -9,38 +9,40 @@
     
     &__info {
         padding: 40px 0 90px;
-        
-        &__email {
-            display: block;
-            color: $blue-green;
-            text-decoration: none;
-            margin-bottom: 40px;
-        }
-
-        &__links {
-            line-height: 1.1em;
-            font-size: 1.1em;
-
-            ul {
-
-                li {
-                    display: inline;
-                    padding: 10px;
-
-                    a {
-                        color: $main-black;
-                        @include transition-color;    
-                    }
-
-                    a:hover {
-                        color: $dark-yellow;
-                    }
-                    
-                    @media(max-width:$max-width) {
-                        display: block;
-                    }
-                }
-            }
-        } 
     }
+	
+	&__email {
+		color: $green;
+		text-decoration: none;
+		padding-bottom: 2px;
+		color: $main-black;
+		border-bottom: 1px solid $main-black;
+	}
+
+	&__links {
+		line-height: 1.1em;
+		font-size: 1.1em;
+		margin-top: 40px;
+
+		ul {
+
+			li {
+				display: inline;
+				padding: 5px 0;
+
+				a {
+					color: $main-black;
+					@include transition-color;    
+				}
+
+				a:hover {
+					color: $dark-yellow;
+				}
+
+				@media(max-width:$max-width) {
+					display: block;
+				}
+			}
+		}
+	}
 }

@@ -2,10 +2,10 @@
 
 .footer {
     @include flex-box-center;
-    @include background-cover(bottom, $background-image--cropped2);
+    @include background-cover(bottom, $background-image);
     color: $main-white;
     height: 100px;
-    
+
     span {
         text-align: center;
         padding: 10px;

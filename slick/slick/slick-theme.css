@@ -88,7 +88,15 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url('../../static/arrow.svg');
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
+	margin-top: -30px;
+	right: -10px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +114,14 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url('../../static/arrow.svg');
+	background-repeat: no-repeat;
+	transform: rotate(-90deg);
+	margin-top: -30px;
 }
 [dir='rtl'] .slick-next:before
 {

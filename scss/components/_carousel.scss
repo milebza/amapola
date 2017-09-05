@@ -48,18 +48,6 @@
             margin: 40px 0 25px;
         }
 
-        a {
-            color: $blue-green;
-            text-decoration: none;
-            padding: 8px;
-            @include transition-color-background-color;
-        }
-
-        a:hover {
-            color: $main-white;
-            background-color: $blue-green;
-        }
-
         p {
             line-height: 1.8em;
             margin-bottom: 28px;
@@ -86,7 +74,7 @@
             margin: 0;
             padding: 30px 30px 40px;
             color: $main-white;
-            background-color: $blue-green;
+            background-color: $dark-green;
         }
 
         .mobile-show {
@@ -104,7 +92,7 @@
 			}
             .col-4 {
                 color: $main-white;
-                background-color: $blue-green;
+                background-color: $dark-green;
                 text-align: left;
                 padding-left: 15px;
                 padding-right: 15px;
@@ -136,6 +124,24 @@
         }
 
     }
+	
+	&__btn {
+		color: $dark-green;
+		text-decoration: none;
+		padding: 12px;
+		border-radius: 20px;
+		border: 1px solid;
+		@include transition-color-background-color;
+		
+		&:hover {
+			color: $main-white;
+			background-color: $dark-green;
+		}
+		
+		@media(max-width:$max-width) {
+			border: none;
+		}
+	}
 }
 
 .carousel-background {

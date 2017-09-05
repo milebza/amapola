@@ -53,33 +53,20 @@ gulp.task('scripts', function() {
             $.util.log($.util.colors.red(error.message));
             this.emit('end');
         }))
-        //.pipe($.uglify())
-        .pipe($.if(config.sourcemaps, $.sourcemaps.init()))
-        .pipe($.if(config.sourcemaps, $.sourcemaps.write()))
         .pipe($.concat('main.js'))
+        .pipe($.uglify().on('error', function(error) {
+            $.util.log($.util.colors.red(error.message));
+            this.emit('end');
+        }))
+        // .pipe($.if(config.sourcemaps, $.sourcemaps.init()))
+        // .pipe($.if(config.sourcemaps, $.sourcemaps.write()))
         .pipe(gulp.dest(config.dest))
-
-        // .pipe($.uglify().on('error', function(error) {
-        //     $.util.log($.util.colors.red(error.message));
-        //     this.emit('end');
-        // }))
-
 });
-
-// Optimize images
-gulp.task('images', function() {
-    return gulp.src(config.src + 'assets/**/*.{gif,jpg,png,svg}')
-        .pipe($.cache($.imagemin()))
-        .pipe(gulp.dest(config.dest));
-});
-
-
 
 // Watch files for changes
 gulp.task('watch', function() {
     gulp.watch(config.src + 'scss/**/*.scss', ['styles']);
     gulp.watch(config.src + 'js/**/*.js', ['scripts']);
-    gulp.watch(config.src + 'assets/**/*.{gif,jpg,png,svg}', ['images']);
 });
 
 // Run all tasks
