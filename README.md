@@ -3,7 +3,7 @@
 A one page site that talks about me
 
 ## Languages
-HTML 5, CSS 3 (Sass), JavaScript (jQuery), Gulp.
+HTML 5, CSS 3 (Sass, BEM), JavaScript (jQuery), Gulp.
 No css framework was used.
 
 ## Borrowed code
@@ -12,5 +12,4 @@ No css framework was used.
 * Slick carousel (http://kenwheeler.github.io/slick/)
 
 ## Background image
-By Elizabeth Malmstrom
-~ http://takemetomountains.tumblr.com
+Unknown source :(
