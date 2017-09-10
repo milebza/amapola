@@ -1,10 +1,5 @@
 /* Mixins */
 
-
-//----------
-//  Clearfix
-//----------
-
 @mixin clearfix() {
   &:before,
   &:after {
@@ -15,11 +10,6 @@
     clear: both;
   }
 }
-
-
-//-----------------
-//  Section's Title
-//-----------------
 
 @mixin title() {
     font: {
@@ -32,32 +22,17 @@
     padding: 100px 0 0 0;
 }
 
-
-//----------
-//  Section
-//----------
-
 @mixin section($color) {
     width: 100%;
     text-align: center;
     background-color: $color;
 }
 
-
-//------------------------------------
-//  Center vertically and horizontally
-//------------------------------------
-
 @mixin flex-box-center() {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
-//------------------------------
-//  Background with image cover
-//------------------------------
 
 @mixin background-cover($position, $cover-image) {
     background: url($cover-image) no-repeat;
@@ -71,19 +46,9 @@
     background-size:cover;
 }
 
-
-//----------------------------------------
-//  Transition: color and background color
-//----------------------------------------
-
 @mixin transition-color-background-color() {
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
-
-
-//-------------------
-//  Transition: color
-//-------------------
 
 @mixin transition-color() {
     transition: color 200ms ease-in-out;
