@@ -21,12 +21,16 @@
 		color: $main-white;
 		padding: 0 15px;
 		text-decoration: none;
+		
+		@media(max-width:$max-width) {
+			display: none;
+		}
 	}
 	
 	&__nav--toggle {
 		float: right;
 		display: none;
-
+		
 		@media(max-width:$max-width) {
 			display: block;
 		}
@@ -35,67 +39,63 @@
 	&__menu {
 		float: right;
 
-		ul {
-
-			padding-right: 7px;
-
-			li {
-				display: inline;
-				margin: 0 5px;
-				padding: 10px;
-
-				a {
-					text-decoration: none;
-					color: $main-white;
-					border-bottom: solid 2px transparent;
-
-					transition: 300ms;
-
-				}
-				a:hover {
-					border-bottom: solid 2px $main-white;
-				}
-				a:active {
-					color: $main-white;
-				}
-
-				@media(max-width:$max-width) {
-					display: block;
-					text-align: right;
-					padding: 0 5px 0 0;
-					
-					color: $main-black;
-					
-					a:hover {
-						border-bottom: solid 2px $main-white;
-					}
-					a:active {
-						color: $main-white;
-					}
-				}
-			}
-
-			li.header__github {
-				font-size: 14px;
-				text-align: center;
-				padding: 0;
-
-				a:hover {
-					border-bottom: solid 2px transparent;
-				}
-
-				@media(max-width:$max-width) {
-					display: block;
-					text-align: right;
-					padding: 0 5px 0 0;
-				}
-			}
-		}
-
 		@media(max-width:$max-width) {
 			background-color: $transp-green;
 			width: 100%;
 			display: none;
 		}
-	}   
+	}
+	
+	&__links {
+		padding-right: 7px;
+	}
+	
+	&__link {
+		display: inline;
+		margin: 0 5px;
+		padding: 10px;
+
+		a {
+			text-decoration: none;
+			color: $main-white;
+			border-bottom: solid 2px transparent;
+
+			transition: 300ms;
+			
+			&:hover, &:active {
+				color: $main-white;
+				border-bottom: solid 2px $main-white;
+			}
+
+		}
+
+		@media(max-width:$max-width) {
+			display: block;
+			text-align: right;
+			padding: 0 5px 0 0;
+		}
+	}
+	
+	&__home {
+		display: none;
+		@media(max-width:$max-width) {
+			display: block;
+		}
+	}
+	
+	&__github {
+		font-size: 14px;
+		text-align: center;
+		padding: 0;
+
+		a:hover {
+			border-bottom: solid 2px transparent;
+		}
+
+		@media(max-width:$max-width) {
+			display: block;
+			text-align: right;
+			padding: 0 5px 0 0;
+		}
+	}
 }

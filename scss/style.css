@@ -16,18 +16,20 @@
 /* Form components */
 /* line 3, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
 .form-group {
+  font-size: 1.1em;
   margin-bottom: 1em; }
 
-/* line 7, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+/* line 8, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
 .form-label {
   display: inline-block;
-  margin-bottom: .3em; }
+  margin-bottom: .5em; }
 
-/* line 12, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+/* line 13, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
 .form-input {
   display: block;
   width: 100%;
   height: 2.375em;
+  outline: none;
   border: 1px solid rgba(132, 139, 14, 0.2);
   border-radius: 0;
   padding: 0.375em 0.75em;
@@ -36,18 +38,19 @@
   background-color: rgba(132, 139, 14, 0.2);
   color: #181517;
   transition: border-color 0.15s ease-out; }
-  /* line 25, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+  /* line 27, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
   .form-input:focus {
-    border: 1px solid white;
+    border: 1px solid #73b134;
     background-color: white;
-    color: #333; }
+    color: #333;
+    box-shadow: 0 0 8px rgba(104, 133, 75, 0.4); }
 
-/* line 32, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+/* line 35, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
 .form-textarea {
   height: auto;
   resize: vertical; }
 
-/* line 37, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+/* line 40, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
 .form-btn {
   display: block;
   margin: 0 auto;
@@ -58,7 +61,7 @@
   padding: 15px 20px;
   font-weight: 400;
   transition: 200ms ease-in-out; }
-  /* line 48, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
+  /* line 51, C:/Users/Milena/Documents/MySite/scss/utils/_form.scss */
   .form-btn:hover {
     background-color: #181517;
     color: white; }
@@ -377,70 +380,72 @@
     color: white;
     padding: 0 15px;
     text-decoration: none; }
-  /* line 26, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+    @media (max-width: 960px) {
+      /* line 14, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      .header__author {
+        display: none; } }
+  /* line 30, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
   .header__nav--toggle {
     float: right;
     display: none; }
     @media (max-width: 960px) {
-      /* line 26, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      /* line 30, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
       .header__nav--toggle {
         display: block; } }
-  /* line 35, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+  /* line 39, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
   .header__menu {
     float: right; }
-    /* line 38, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-    .header__menu ul {
-      padding-right: 7px; }
-      /* line 42, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-      .header__menu ul li {
-        display: inline;
-        margin: 0 5px;
-        padding: 10px; }
-        /* line 47, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-        .header__menu ul li a {
-          text-decoration: none;
-          color: white;
-          border-bottom: solid 2px transparent;
-          transition: 300ms; }
-        /* line 55, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-        .header__menu ul li a:hover {
-          border-bottom: solid 2px white; }
-        /* line 58, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-        .header__menu ul li a:active {
-          color: white; }
-        @media (max-width: 960px) {
-          /* line 42, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-          .header__menu ul li {
-            display: block;
-            text-align: right;
-            padding: 0 5px 0 0;
-            color: #181517; }
-            /* line 69, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-            .header__menu ul li a:hover {
-              border-bottom: solid 2px white; }
-            /* line 72, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-            .header__menu ul li a:active {
-              color: white; } }
-      /* line 78, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-      .header__menu ul li.header__github {
-        font-size: 14px;
-        text-align: center;
-        padding: 0; }
-        /* line 83, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-        .header__menu ul li.header__github a:hover {
-          border-bottom: solid 2px transparent; }
-        @media (max-width: 960px) {
-          /* line 78, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
-          .header__menu ul li.header__github {
-            display: block;
-            text-align: right;
-            padding: 0 5px 0 0; } }
     @media (max-width: 960px) {
-      /* line 35, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      /* line 39, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
       .header__menu {
         background-color: rgba(104, 133, 75, 0.4);
         width: 100%;
         display: none; } }
+  /* line 49, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+  .header__links {
+    padding-right: 7px; }
+  /* line 53, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+  .header__link {
+    display: inline;
+    margin: 0 5px;
+    padding: 10px; }
+    /* line 58, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+    .header__link a {
+      text-decoration: none;
+      color: white;
+      border-bottom: solid 2px transparent;
+      transition: 300ms; }
+      /* line 65, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      .header__link a:hover, .header__link a:active {
+        color: white;
+        border-bottom: solid 2px white; }
+    @media (max-width: 960px) {
+      /* line 53, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      .header__link {
+        display: block;
+        text-align: right;
+        padding: 0 5px 0 0; } }
+  /* line 79, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+  .header__home {
+    display: none; }
+    @media (max-width: 960px) {
+      /* line 79, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      .header__home {
+        display: block; } }
+  /* line 86, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+  .header__github {
+    font-size: 14px;
+    text-align: center;
+    padding: 0; }
+    /* line 91, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+    .header__github a:hover {
+      border-bottom: solid 2px transparent; }
+    @media (max-width: 960px) {
+      /* line 86, C:/Users/Milena/Documents/MySite/scss/layout/_header.scss */
+      .header__github {
+        display: block;
+        text-align: right;
+        padding: 0 5px 0 0; } }
 
 /* Grid System */
 /* line 5, C:/Users/Milena/Documents/MySite/scss/utils/_mixins.scss */
@@ -654,7 +659,7 @@
     border: 2px solid rgba(104, 133, 75, 0.4); }
   /* line 41, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__section {
-    padding: 50px 20px 20px; }
+    padding: 40px 20px 20px; }
   /* line 45, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__title {
     font-size: 1.1em;
@@ -723,13 +728,12 @@
     @media (max-width: 960px) {
       /* line 25, C:/Users/Milena/Documents/MySite/scss/pages/_projects.scss */
       .projects__item {
-        padding: 10px;
-        margin-bottom: 15px; } }
+        padding: 20px; } }
   @media (max-width: 960px) {
     /* line 3, C:/Users/Milena/Documents/MySite/scss/pages/_projects.scss */
     .projects {
       padding-top: 0; } }
-  /* line 38, C:/Users/Milena/Documents/MySite/scss/pages/_projects.scss */
+  /* line 37, C:/Users/Milena/Documents/MySite/scss/pages/_projects.scss */
   .projects__btn {
     display: inline-block;
     padding: 20px;
@@ -760,34 +764,11 @@
     @media (max-width: 960px) {
       /* line 10, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
       .contact__info {
-        padding: 40px 20px 90px; } }
-  /* line 20, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-  .contact__email {
-    color: #73b134;
-    text-decoration: none;
-    padding-bottom: 2px;
-    color: #181517;
-    border-bottom: 1px solid #181517; }
-  /* line 28, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-  .contact__links {
-    line-height: 1.1em;
-    font-size: 1.1em;
-    margin-top: 40px; }
-    /* line 35, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-    .contact__links ul li {
-      display: inline;
-      padding: 5px 0; }
-      /* line 39, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-      .contact__links ul li a {
-        color: #181517;
-        transition: color 200ms ease-in-out; }
-      /* line 44, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-      .contact__links ul li a:hover {
-        color: #848b0e; }
-      @media (max-width: 960px) {
-        /* line 35, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
-        .contact__links ul li {
-          display: block; } }
+        padding: 40px 20px 50px; } }
+  @media (max-width: 960px) {
+    /* line 20, C:/Users/Milena/Documents/MySite/scss/pages/_contact.scss */
+    .contact__btn {
+      margin-top: 10px; } }
 
 /* CLASSES */
 /* Classes */

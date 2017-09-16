@@ -11,44 +11,15 @@
         padding: 40px 30px 90px;
 		
 		@media(max-width:$max-width) {
-			padding: 40px 20px 90px;
+			padding: 40px 20px 50px;
 		}
 		
 		text-align: left;
     }
 	
-	&__email {
-		color: $green;
-		text-decoration: none;
-		padding-bottom: 2px;
-		color: $main-black;
-		border-bottom: 1px solid $main-black;
-	}
-
-	&__links {
-		line-height: 1.1em;
-		font-size: 1.1em;
-		margin-top: 40px;
-
-		ul {
-
-			li {
-				display: inline;
-				padding: 5px 0;
-
-				a {
-					color: $main-black;
-					@include transition-color;    
-				}
-
-				a:hover {
-					color: $dark-yellow;
-				}
-
-				@media(max-width:$max-width) {
-					display: block;
-				}
-			}
+	&__btn {
+		@media(max-width:$max-width) {
+			margin-top: 10px;
 		}
 	}
 }
