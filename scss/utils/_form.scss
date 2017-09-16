@@ -1,0 +1,52 @@
+/* Form components */
+
+.form-group {
+	margin-bottom: 1em;
+}
+
+.form-label {
+	display: inline-block;
+	margin-bottom: .3em;
+}
+
+.form-input {
+	display: block;
+	width: 100%;
+	height: 2.375em;
+	border: 1px solid $transp-dark-yellow;
+	border-radius: 0;
+	padding: .375em .75em;
+	background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: $transp-dark-yellow;
+	color: $main-black;
+	transition: border-color .15s ease-out;
+	
+	&:focus {
+		border: 1px solid $main-white;
+		background-color: $main-white;
+		color: #333;
+	}
+}
+
+.form-textarea {
+	height: auto;
+    resize: vertical;
+}
+
+.form-btn {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	border: 2px solid $main-black;
+	border-radius: 30px;
+	background-color: $main-white;
+	padding: 15px 20px;
+	font-weight: 400;
+	transition: 200ms ease-in-out;
+	
+	&:hover {
+		background-color: $main-black;
+		color: $main-white;
+	}
+}

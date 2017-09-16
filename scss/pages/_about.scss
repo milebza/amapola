@@ -10,8 +10,6 @@
     &__content {
         line-height: 1.7em;
         font-size: 1.1em;
-//        padding-top: 40px;
-//        padding-bottom: 70px;
 		padding: 40px 20px 70px;
 		
 		text-align: center;
@@ -41,7 +39,7 @@
 	}
 	
 	&__section {
-		padding: 20px;
+		padding: 50px 20px 20px;
 	}
 	
 	&__title {
@@ -78,26 +76,13 @@
     	border-bottom: 1px solid $main-black;
 	}
 	
-	&__text--last {
-		@media(max-width:$max-width) {
-			padding: 0 20px 20px 20px;
-		}
-	}
-	
 	&__picture{
 		@media(max-width:$max-width) {
 			margin-bottom: 20px;
 		}
 	}
-
-	&__frame {
-		text-align: center;
-		img {
-			width: 70%;
-			height: 70%;
-			max-width: 450px;
-			max-height: 450px;
-			border-radius: 50%;
-		}
+	
+	strong {
+		font-weight: 400;
 	}
 }

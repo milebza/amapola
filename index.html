@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Milena Baeza</title>
+        <title>ʕ⊙ᴥ⊙ʔ</title>
 
         <!-- Normalization -->
         <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
@@ -48,7 +48,7 @@
         <!-- HEADER -->
         <header class="header">
             <nav class="header__nav">
-                <a class="header__author js-scroll-to" data-page=".top" href="#">Milena Baeza</a>
+                <a class="header__author js-scroll-to" data-page=".top" href="#">m.</a>
 
                 <button class="header__nav--toggle js-toggle toggle-hamburger toggle-hamburger--x">
                     <span>toggle menu</span>
@@ -83,7 +83,7 @@
 						<img class="about__round-image" src="assets/profile_animation.gif" alt="Profile picture">
 					</div>
 					<div class="about__description">
-						<p>Hello! I'm Milena Baeza, an amateur artist and frontend developer living in Portugal.</p>
+						<p>Hello! I'm Milena Baeza, an artist and frontend developer living in Portugal.</p>
 						<p>I like to make collages, photograph nature and code useful stuff that will make people happy. If you're looking for a more résumé-like description head over to my <a class="about__link text-bold" href="https://www.linkedin.com/in/milena-baeza/" target="_blank">linkedin!</a></p>
 					</div>
 					<div class="about__section">
@@ -125,12 +125,12 @@
 					<div class="about__section row">
 						<h3 class="about__title">What can I do for you</h3>
 						<div class="about__subcontent column column-6">
-							<img src="static/design.svg">
-							<p class="about__width-300">From brainstorming to a prototype I can design your dream site/blog, based on your guidelines.</p>
+							<img src="assets/design.svg">
+							<p class="about__width-300">From brainstorming to a prototype I can <strong class="text-bold">design</strong> your dream site/blog, based on your guidelines.</p>
 						</div>
 						<div class="about__subcontent column column-6">
-							<img src="static/code.svg">
-							<p class="about__width-300">Give life to your site/blog! It can be a static site, a WordPress or Tumblr theme. No need to say, it'll be mobile friendly. I can customize your existing site too.</p>
+							<img src="assets/code.svg">
+							<p class="about__width-300"><strong class="text-bold">Code</strong> your site/blog! It can be a static site, a WordPress or Tumblr theme. No need to say, it'll be mobile friendly. I can customize your existing site too.</p>
 						</div>
 					</div>
                 </div>
@@ -190,9 +190,6 @@
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_03.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_09.jpg" alt="Visual composition"></div>
-                </div>
-                <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_04.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
@@ -200,9 +197,6 @@
                 </div>
                 <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_07.jpg" alt="Visual composition"></div>
-                </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_08.jpg" alt="Visual composition"></div>
                 </div>
                 <div class="slide container">
                     <div class="row"><img class="img-100" src="assets/visual_compositions/collage_05.jpg" alt="Visual composition"></div>
@@ -231,19 +225,32 @@
         <section class="contact">
             <h1>Contact</h1>
             <div class="contact__info">
-                <p>Feel free to email me, whenever!</p><br>
-                <a class="contact__email" href="mailto:miibaeza@gmail.com">miibaeza@gmail.com</a>
+				<form method="POST" action="http://formspree.io/miibaeza@gmail.com">
+					<div class="row">
+						<div class="form-group column column-4">
+							<label class="form-label" for="name">Name</label>
+							<input class="form-input" type="text" name="name" id="name">
+						</div>
 
-                <div class="contact__links">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://github.com/milebza"><i class="fa fa-github fa-2x fa-fw"></i></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://pt.linkedin.com/in/milena-baeza-967867119"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
-                        </li>
-                    </ul>
-                </div>
+						<div class="form-group column column-4">
+							<label class="form-label" for="email">Email</label>
+							<input class="form-input" type="email" name="email" id="email">
+						</div>
+
+						<div class="form-group column column-4">
+							<label class="form-label" for="subject">Subject</label>
+							<input class="form-input" type="text" name="_subject" id="subject">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group column column-12">
+							<label class="form-label" for="message">Tell me about your project</label>
+							<textarea class="form-input form-textarea" name="message" id="message" rows="10"></textarea>
+						</div>
+					</div>	
+					<button class="form-btn" type="submit">Send</button>
+				</form>
             </div>
         </section>
 

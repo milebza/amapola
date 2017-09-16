@@ -12,34 +12,15 @@
     transition: all 300ms;
 	
 	&__author {
-		display: none;
-		
-//		font: {
-//			family: Noto serif, serif;
-//			weight: 400;
-//			size: 26px;
-//		}
-//		color: $main-black;
-//		width: 200px;
-//		float: left;
-//		padding: 0 7px 0 7px;
-//
-//		text : {
-//			align: center;
-//			decoration: none;
-//		}
-//
-//		@include transition-color-background-color;
-//		
-//		&:hover {
-//			color: $main-white;
-//			background-color: $main-black;
-//		}
-//		
-//		&:active {
-//			background-color: $main-white;
-//			color: $main-black;
-//		}
+		font: {
+			family: Noto serif, serif;
+			weight: 400;
+			size: 2em;
+		}
+		line-height: 1em;
+		color: $main-white;
+		padding: 0 15px;
+		text-decoration: none;
 	}
 	
 	&__nav--toggle {
@@ -65,7 +46,6 @@
 
 				a {
 					text-decoration: none;
-					//color: $main-black;
 					color: $main-white;
 					border-bottom: solid 2px transparent;
 
