@@ -48,7 +48,7 @@
 			weight: 400;
 		}
 		text-transform: uppercase;
-		padding-bottom: 10px;
+		padding-bottom: 25px;
 	}
 	
 	&__subtitle {
@@ -79,6 +79,20 @@
 	&__picture{
 		@media(max-width:$max-width) {
 			margin-bottom: 20px;
+		}
+	}
+	
+	&__frame {
+		background-color: $transp-dark-yellow;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto 20px;
+		box-shadow: 0px 1px 3px $shadow-color;
+		
+		img {
+			width: 40px;
+			margin-top:	22px;
 		}
 	}
 	
