@@ -22,6 +22,10 @@
 
     .slide {
         text-align: center;
+		
+		&:focus {
+			outline: none;
+		}
 
         .row {
             background-color: $main-white;

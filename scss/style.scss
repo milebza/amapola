@@ -47,3 +47,9 @@ body {
 		color: $main-black;
     }
 }
+
+button, a {
+	&:focus {
+		outline: none;
+	}
+}

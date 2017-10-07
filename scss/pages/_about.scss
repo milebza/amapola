@@ -51,6 +51,12 @@
 		padding-bottom: 25px;
 	}
 	
+	&__skills {
+		@media(min-width:$max-width) {
+            margin-bottom: 25px;
+        }
+	}
+	
 	&__subtitle {
 		color: rgba(104, 133, 75, .6);
 	}
