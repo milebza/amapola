@@ -28,7 +28,9 @@
 		}
 
         .row {
-            background-color: $main-white;
+            background-color: $dark-green;
+			color: $main-white;
+			border-radius: 2px;
 
             .col {
 				position: relative;
@@ -46,15 +48,9 @@
             }
         }
 
-        h3 {
-            font-size: 1.3em;
-            text-transform: uppercase;
-            margin: 40px 0 25px;
-        }
-
         p {
             line-height: 1.8em;
-            margin-bottom: 28px;
+            margin-bottom: 20px;
 
             small {
                 display: block;
@@ -62,13 +58,13 @@
                 margin-top: 40px;
 
                 a {
-                    color: $main-black;
+                    color: $main-white;
                     text-decoration: underline;
                     padding: 0;
                 }
 
                 a:hover {
-                    color: $main-black;
+                    color: $main-white;
                     background-color: inherit;
                 }
             }
@@ -79,6 +75,7 @@
             padding: 30px 30px 40px;
             color: $main-white;
             background-color: $dark-green;
+			border-radius: 2px;
         }
 
         .mobile-show {
@@ -102,7 +99,7 @@
                 padding-right: 15px;
                 margin: 0;
 
-                h3, p {
+                p {
                     display: inline-block;
                     margin: 0;
                 }
@@ -129,21 +126,41 @@
 
     }
 	
+	&__title {
+		font-size: 1.3em;
+		text-transform: uppercase;
+		margin: 40px 10px 25px;
+		border-bottom: 1px solid white;
+		padding-bottom: 25px;
+		
+		@media(max-width:$max-width) {
+			display: inline-block;
+            margin: 0;
+			padding: 0;
+			border: none;
+		}
+	}
+	
 	&__btn {
+		display: inline-block;
+		width: 100px;
 		color: $dark-green;
+		background-color: $main-white;
 		text-decoration: none;
 		padding: 12px;
 		border-radius: 20px;
-		border: 1px solid;
+		border: 1px solid $main-white;
 		@include transition-color-background-color;
 		
 		&:hover {
 			color: $main-white;
-			background-color: $dark-green;
+			background-color: $main-black;
+			border-color: $main-black;
 		}
 		
 		@media(max-width:$max-width) {
 			border: none;
+			width: auto;
 		}
 	}
 }

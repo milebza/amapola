@@ -242,29 +242,29 @@
   .carousel .slide {
     text-align: center; }
     /* line 26, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+    .carousel .slide:focus {
+      outline: none; }
+    /* line 30, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
     .carousel .slide .row {
-      background-color: white; }
-      /* line 29, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      background-color: #36a06e;
+      color: white;
+      border-radius: 2px; }
+      /* line 35, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .row .col {
         position: relative;
         float: left;
         display: block; }
-      /* line 35, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 41, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .row .col-4 {
         width: 33.33333332%;
         padding: 15px 15px 15px 15px; }
-      /* line 40, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 46, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .row .col-8 {
         width: 66.67%; }
-    /* line 45, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
-    .carousel .slide h3 {
-      font-size: 1.3em;
-      text-transform: uppercase;
-      margin: 40px 0 25px; }
     /* line 51, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
     .carousel .slide p {
       line-height: 1.8em;
-      margin-bottom: 28px; }
+      margin-bottom: 20px; }
       /* line 55, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide p small {
         display: block;
@@ -272,29 +272,30 @@
         margin-top: 40px; }
         /* line 60, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
         .carousel .slide p small a {
-          color: #181517;
+          color: white;
           text-decoration: underline;
           padding: 0; }
         /* line 66, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
         .carousel .slide p small a:hover {
-          color: #181517;
+          color: white;
           background-color: inherit; }
     /* line 73, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
     .carousel .slide .only-paragraph {
       margin: 0;
       padding: 30px 30px 40px;
       color: white;
-      background-color: #36a06e; }
-    /* line 80, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      background-color: #36a06e;
+      border-radius: 2px; }
+    /* line 81, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
     .carousel .slide .mobile-show {
       display: none; }
     @media (max-width: 960px) {
-      /* line 88, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 89, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .row .col-4,
       .carousel .slide .row .col-8 {
         float: none;
         width: auto; }
-      /* line 93, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 94, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .col-4 {
         color: white;
         background-color: #36a06e;
@@ -302,11 +303,11 @@
         padding-left: 15px;
         padding-right: 15px;
         margin: 0; }
-        /* line 101, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
-        .carousel .slide .col-4 h3, .carousel .slide .col-4 p {
+        /* line 102, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+        .carousel .slide .col-4 p {
           display: inline-block;
           margin: 0; }
-        /* line 106, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+        /* line 107, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
         .carousel .slide .col-4 a {
           float: right;
           display: inline-block;
@@ -321,30 +322,49 @@
         /* line 9, C:/Users/Milena/Documents/MySite/scss/utils/_mixins.scss */
         .carousel .slide .col-4:after {
           clear: both; }
-      /* line 117, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 118, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .mobile-hide, .carousel .slide p.mobile-hide {
         display: none; }
-      /* line 121, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 122, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel .slide .mobile-show {
         display: inline; } }
-  /* line 128, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+  /* line 129, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+  .carousel__title {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin: 40px 10px 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 25px; }
+    @media (max-width: 960px) {
+      /* line 129, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      .carousel__title {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none; } }
+  /* line 144, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
   .carousel__btn {
+    display: inline-block;
+    width: 100px;
     color: #36a06e;
+    background-color: white;
     text-decoration: none;
     padding: 12px;
     border-radius: 20px;
-    border: 1px solid;
+    border: 1px solid white;
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out; }
-    /* line 136, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+    /* line 155, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
     .carousel__btn:hover {
       color: white;
-      background-color: #36a06e; }
+      background-color: #181517;
+      border-color: #181517; }
     @media (max-width: 960px) {
-      /* line 128, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+      /* line 144, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel__btn {
-        border: none; } }
+        border: none;
+        width: auto; } }
 
-/* line 147, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+/* line 168, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
 .carousel-background {
   visibility: hidden;
   position: fixed;
@@ -356,7 +376,7 @@
   opacity: 0;
   transition: 500ms ease-in-out; }
 
-/* line 159, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+/* line 180, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
 .visible {
   visibility: visible;
   opacity: 1; }
@@ -669,32 +689,36 @@
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 25px; }
-  /* line 54, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  @media (min-width: 960px) {
+    /* line 54, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+    .about__skills {
+      margin-bottom: 25px; } }
+  /* line 60, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__subtitle {
     color: rgba(104, 133, 75, 0.6); }
-  /* line 58, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  /* line 64, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__subcontent {
     font-size: .9em; }
-  /* line 62, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  /* line 68, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__width-300 {
     width: 300px;
     margin: 0 auto; }
     @media (max-width: 700px) {
-      /* line 62, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+      /* line 68, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
       .about__width-300 {
         width: 100%;
         margin: 0; } }
-  /* line 72, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  /* line 78, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__link {
     color: #181517;
     text-decoration: none;
     padding-bottom: 2px;
     border-bottom: 1px solid #181517; }
   @media (max-width: 960px) {
-    /* line 79, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+    /* line 85, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
     .about__picture {
       margin-bottom: 20px; } }
-  /* line 85, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  /* line 91, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about__frame {
     background-color: rgba(132, 139, 14, 0.2);
     border-radius: 50%;
@@ -702,11 +726,11 @@
     height: 80px;
     margin: 0 auto 20px;
     box-shadow: 0px 1px 3px rgba(24, 21, 23, 0.5); }
-    /* line 93, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+    /* line 99, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
     .about__frame img {
       width: 40px;
       margin-top: 22px; }
-  /* line 99, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
+  /* line 105, C:/Users/Milena/Documents/MySite/scss/pages/_about.scss */
   .about strong {
     font-weight: 400; }
 
@@ -806,6 +830,20 @@
 .text-bold {
   font-weight: 400; }
 
+/* line 20, C:/Users/Milena/Documents/MySite/scss/utils/_classes.scss */
+.margin-bottom-30 {
+  margin-bottom: 30px; }
+
+/* line 24, C:/Users/Milena/Documents/MySite/scss/utils/_classes.scss */
+.align-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  @media (max-width: 960px) {
+    /* line 24, C:/Users/Milena/Documents/MySite/scss/utils/_classes.scss */
+    .align-center {
+      flex-direction: column; } }
+
 /* line 40, C:/Users/Milena/Documents/MySite/scss/style.scss */
 body {
   -webkit-font-smoothing: antialiased;
@@ -813,5 +851,9 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-color: #181517; }
+
+/* line 52, C:/Users/Milena/Documents/MySite/scss/style.scss */
+button:focus, a:focus {
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */
