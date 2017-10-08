@@ -159,6 +159,8 @@
 		}
 		
 		@media(max-width:$max-width) {
+			color: white;
+			background-color: $dark-green;
 			border: none;
 			width: auto;
 		}

@@ -361,10 +361,12 @@
     @media (max-width: 960px) {
       /* line 144, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
       .carousel__btn {
+        color: white;
+        background-color: #36a06e;
         border: none;
         width: auto; } }
 
-/* line 168, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+/* line 170, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
 .carousel-background {
   visibility: hidden;
   position: fixed;
@@ -376,7 +378,7 @@
   opacity: 0;
   transition: 500ms ease-in-out; }
 
-/* line 180, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
+/* line 182, C:/Users/Milena/Documents/MySite/scss/components/_carousel.scss */
 .visible {
   visibility: visible;
   opacity: 1; }
