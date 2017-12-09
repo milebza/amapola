@@ -3,6 +3,10 @@
     <head>
         <title>milena</title>
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i" rel="stylesheet">
+
         <!-- Normalization -->
         <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
 
@@ -107,8 +111,8 @@
 							</div>
 							<div class="column column-3">
 								<p class="about__subtitle">JavaScript</p>
-								<p class="about__subcontent">Design Patterns, APIs, npm,<br>
-								Object-Oriented Programming. <br>Vue.js, React.js, jQuery.</p>
+								<p class="about__subcontent">Object-Oriented Programming.<br>APIs, unit testing (Jest), npm.
+								<br>Vue.js, React.js, jQuery.</p>
 							</div>
 							<div class="column column-3">
 								<p class="about__subtitle">PHP</p>
@@ -166,52 +170,55 @@
         <!-- Carousel frontend -->
         <section class="carousel js-frontend js-carousel">
             <div class="js-slick">
-                <div class="slide container">
-                    <div class="row">
-                        <div class="col col-4">
-                            <h3 class="carousel__title">Moonlight</h3>
-							<p><span class="mobile-hide">A customizable</span> theme for tumblr<span class="mobile-hide">.</p>
-							<p class="mobile-hide">Built with HTML, CSS, jQuery and Tumblr system of block and variables. Designed by me.</p>
-							<p class="mobile-hide"> <span class="text-bold">+500 happy users</span></p>
+                <div class="carousel__slide">
+                    <div class="carousel__flex">
+                        <div class="carousel__content-text">
+                            <h3 class="carousel__title">moonlight</h3>
+							<p class="mobile-hide carousel__p">A three column theme for tumblr.</p>
+              <p class="mobile-hide carousel__p">Offers more than 10 customizations (colors, blog borders, infinite scroll, etc.).</p>
+							<p class="mobile-hide carousel__p">Built with HTML, CSS, jQuery and Tumblr system of block and variables. Designed by me.</p>
+							<p class="mobile-hide carousel__p"><span class="text-bold">+500 happy users</span></p>
+              <span class="mobile-show">thumblr theme</span>
 							<a target="_blank" href="https://www.tumblr.com/theme/40383" class="carousel__btn"><span class="mobile-hide">Install</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
-                        <div class="col col-8"><img class="img-100" src="assets/frontend/moonlight_theme.JPG" alt="Moonlight theme for tumblr"></div>
+                        <div class="carousel__content-image"><img class="img-100" src="assets/frontend/moonlight_theme.png" alt="Moonlight, tumblr theme"></div>
                     </div>
                 </div>
-                <div class="slide container">
-                    <div class="row">
-                        <div class="col col-4">
+                <div class="carousel__slide">
+                    <div class="carousel__flex">
+                        <div class="carousel__content-text">
                             <h3 class="carousel__title">Milena</h3>
-                            <p class="mobile-hide">A one page site that talks about me.</p>
-							<p class="mobile-hide">Languages: HTML, CSS (Sass, BEM), jQuery, Gulp. No css framework was used. Designed by me</p>
+                            <p class="mobile-hide carousel__p">A one page site that talks about me.</p>
+							<p class="mobile-hide carousel__p">Built with HTML, CSS (Sass, BEM), jQuery, Gulp. No css framework was used. Designed by me.</p>
 							<span class="mobile-show">static site</span>
                             <a target="_blank" href="https://github.com/milebza/milebza.github.io" class="carousel__btn"><span class="mobile-hide">See code</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
-                        <div class="col col-8"><img class="img-100" src="assets/frontend/custom_site.jpg" alt="Milena's website"></div>
+                        <div class="carousel__content-image"><img class="img-100" src="assets/frontend/milena_site.png" alt="Milena, static website"></div>
                     </div>
                 </div>
-				<div class="slide container">
-                    <div class="row">
-                        <div class="col col-4">
+				<div class="carousel__slide">
+                    <div class="carousel__flex">
+                        <div class="carousel__content-text">
                             <h3 class="carousel__title">Wetherell</h3>
-                            <p class="mobile-hide">A luxury WordPress site for Wetherell, the famous Real Estate Agency of Mayfair.</p>
-							<p class="mobile-hide">I worked in both the site and web application it's connected to, doing front-end and back-end development tasks.</p>
+                            <p class="mobile-hide carousel__p">A luxury WordPress site for Wetherell, the Real Estate Agency of Mayfair.</p>
+							<p class="mobile-hide carousel__p">I worked in both the site and web application it's connected to, doing front-end and back-end development tasks.</p>
 							<span class="mobile-show">wordpress site</span>
                             <a target="_blank" href="http://wetherell.co.uk/" class="carousel__btn"><span class="mobile-hide">Visit site</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
-                        <div class="col col-8"><img class="img-100" src="assets/frontend/wetherell_site.JPG" alt="Wetherell website"></div>
+                        <div class="carousel__content-image"><img class="img-100" src="assets/frontend/wetherell_site.png" alt="Wetherell, wordpress website"></div>
                     </div>
                 </div>
-                <div class="slide container">
-                    <div class="row">
-                        <div class="col col-4">
-                            <h3 class="carousel__title">Milenote</h3>
-                            <p class="mobile-hide">A notes web app.</p>
-                            <p class="mobile-hide">Languages: HTML, CSS (Sass, BEM, Baseguide), React.js, Webpack. Designed by me.</p>
+                <div class="carousel__slide">
+                    <div class="carousel__flex">
+                        <div class="carousel__content-text">
+                            <h3 class="carousel__title">milenote</h3>
+                            <p class="mobile-hide carousel__p">A notes web application.</p>
+                            <p class="mobile-hide carousel__p">Some of the features include: adding, editing and deleting a note, filtering notes by text and/or date.</p>
+                            <p class="mobile-hide carousel__p">Built with HTML, CSS (Sass, BEM, Baseguide), React.js with Redux, Webpack. Designed by me.</p>
 							<span class="mobile-show">web app</span>
-                            <a target="_blank" href="http://milenote.herokuapp.com/" class="carousel__btn"><span class="mobile-hide">Try it</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
+                            <a target="_blank" href="http://milenote.herokuapp.com/" class="carousel__btn"><span class="mobile-hide">Try it out!</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
                         </div>
-                        <div class="col col-8"><img class="img-100" src="assets/frontend/milenote.jpg" alt="A notes app"></div>
+                        <div class="carousel__content-image"><img class="img-100" src="assets/frontend/milenote_app.png" alt="milenote, web application"></div>
                     </div>
                 </div>
             </div>
@@ -220,26 +227,32 @@
         <!-- Carousel Visual compositions -->
         <section class="carousel js-visual-comp js-carousel">
             <div class="js-slick">
-                <div class="slide container">
-                    <div class="row"><p class="only-paragraph">I like to gather small things in my daily life and combine their colors, lettering and shapes. What you'll see next is a collection of my favorites.<br><br>I post them regularly in my blog, among photographs and drawings.</p></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex">
+                      <p class="carousel__only-text">
+                        I like <span class="text-bold">to gather</span> small <span class="text-bold">things</span> in my daily life
+                        and <span class="text-bold">combine</span> their <span class="text-bold">colors</span>, <span class="text-bold">lettering</span>
+                        and <span class="text-bold">shapes</span>. What you'll see next is a <span class="text-bold">collection</span> of my <span class="text-bold">favorites</span>.<br><br>I post them regularly in my blog, among <span class="text-bold">photographs</span> and <span class="text-bold">drawings</span>.
+                      </p>
+                    </div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_02.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_02.jpg" alt="Visual composition"></div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_03.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_03.jpg" alt="Visual composition"></div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_04.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_04.jpg" alt="Visual composition"></div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_06.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_06.jpg" alt="Visual composition"></div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_07.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_07.jpg" alt="Visual composition"></div>
                 </div>
-                <div class="slide container">
-                    <div class="row"><img class="img-100" src="assets/visual_compositions/collage_05.jpg" alt="Visual composition"></div>
+                <div class="carousel__slide">
+                    <div class="carousel__flex"><img class="img-100" src="assets/visual_compositions/collage_05.jpg" alt="Visual composition"></div>
                 </div>
             </div>
         </section> <!-- end Carousel Visual compositions -->
@@ -247,15 +260,16 @@
         <!-- Carousel Group project -->
         <section class="carousel js-group-projct js-carousel">
             <div class="js-slick">
-                <div class="slide container">
-                    <div class="row">
-                        <div class="col col-4">
+                <div class="carousel__slide">
+                    <div class="carousel__flex">
+                        <div class="carousel__content-text">
                             <h3 class="carousel__title">Mr. Spoqui</h3>
-                            <p><span class="mobile-hide">A five year long project I made with my siblings.</span><span class="mobile-show">family project</span></p>
+                            <p class="carousel__p mobile-hide">A zine project I made with my siblings.</p>
+                            <p class="carousel__p mobile-hide">Photograph by Matilde Viegas.</p>
+                            <span class="mobile-show">family zine</span>
                             <a target="_blank" href="http://mrspoqui.blogspot.pt/" class="carousel__btn"><span class="mobile-hide">Visit blog</span><span class="mobile-show"><i class="fa fa-eye fa-2x fa-fw"></i></span></a>
-                            <p class="mobile-hide"><small>&copy; photography by <a href="https://www.matildeviegas.com/" target="_blank">Matilde Viegas</a></small></p>
                         </div>
-                        <div class="col col-8"><img class="img-100" src="assets/mrspoqui.jpg" alt="Mr. Spoqui team"></div>
+                        <div class="carousel__content-image"><img class="img-100" src="assets/mrspoqui.jpg" alt="Mr. Spoqui team"></div>
                     </div>
                 </div>
             </div>
@@ -265,7 +279,7 @@
         <section class="contact">
             <h1>Contact</h1>
             <div class="contact__info container">
-				<form method="POST" action="http://formspree.io/miibaeza@gmail.com">
+				<form method="POST" action="https://formspree.io/miibaeza@gmail.com">
 					<div class="row">
 						<div class="form-group column column-4">
 							<label class="form-label" for="name">Name</label>

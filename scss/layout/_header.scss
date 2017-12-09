@@ -8,12 +8,12 @@
 	padding: 10px;
     font-size: $header__font-size;
     line-height: $header-height;
-    
+
     transition: all 300ms;
-	
+
 	&__author {
 		font: {
-			family: Noto serif, serif;
+			family: 'Noto serif', serif;
 			weight: 400;
 			size: 2em;
 		}
@@ -21,21 +21,21 @@
 		color: $main-white;
 		padding: 0 15px;
 		text-decoration: none;
-		
+
 		@media(max-width:$max-width) {
 			display: none;
 		}
 	}
-	
+
 	&__nav--toggle {
 		float: right;
 		display: none;
-		
+
 		@media(max-width:$max-width) {
 			display: block;
 		}
 	}
-	
+
 	&__menu {
 		float: right;
 
@@ -45,11 +45,11 @@
 			display: none;
 		}
 	}
-	
+
 	&__links {
 		padding-right: 7px;
 	}
-	
+
 	&__link {
 		display: inline;
 		margin: 0 5px;
@@ -61,7 +61,7 @@
 			border-bottom: solid 2px transparent;
 
 			transition: 300ms;
-			
+
 			&:hover, &:active {
 				color: $main-white;
 				border-bottom: solid 2px $main-white;
@@ -75,14 +75,14 @@
 			padding: 0 5px 0 0;
 		}
 	}
-	
+
 	&__home {
 		display: none;
 		@media(max-width:$max-width) {
 			display: block;
 		}
 	}
-	
+
 	&__github {
 		font-size: 14px;
 		text-align: center;

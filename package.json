@@ -4,7 +4,7 @@
   "description": "Milena Baeza",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server ./"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,6 @@
     "url": "https://github.com/milebza/milebza.github.io/issues"
   },
   "homepage": "https://github.com/milebza/milebza.github.io#readme",
-  "scripts": {
-    "serve": "live-server ./"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",
@@ -38,5 +35,8 @@
     "postcss-scss": "^0.4.1",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2"
   }
 }

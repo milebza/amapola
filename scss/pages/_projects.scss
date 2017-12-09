@@ -21,19 +21,19 @@
             padding-bottom: 90px;
         }
     }
-	
+
 	&__item {
 		text-align: center;
-		
+
 		@media(max-width:$max-width) {
 			padding: 20px;
 		}
 	}
-	
+
     @media(max-width:$max-width) {
         padding-top: 0;
     }
-	
+
 	&__btn {
 		display: inline-block;
 		padding: 20px;
@@ -42,7 +42,7 @@
 		color: $main-white;
 		border: 1px solid $main-white;
 		font: {
-			family: Noto serif, serif;
+			family: 'Noto serif', serif;
 			size: 1.2em;
 		}
 
