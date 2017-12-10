@@ -1,25 +1,16 @@
 //---------------
 //  Color Palette
 //---------------
-
-/* White */
-$main-white: rgb(255, 255, 255);
-$transparent-white: rgba(255, 255, 255, 0.7);
-
-/* Yellow */
-$transp-dark-yellow: rgba(132, 139, 14, 0.2);
-
-/* Black */
-$main-black: rgb(24, 21, 23);
-$shadow-color: rgba(24, 21, 23, 0.5);
-$dark-shadow: rgba(24, 21, 23, 0.8);
-
-/* Blue */
-$green: rgb(115, 177, 52);
-$dark-green: rgb(54, 160, 110);
-
-/* Green */
-$transp-green: rgba(104, 133, 75, 0.4);
+$main-white           : rgb(255, 255, 255);
+$transparent-white    : rgba(255, 255, 255, 0.7);
+$transp-dark-yellow   : rgba(132, 139, 14, 0.2);
+$main-black           : rgb(24, 21, 23);
+$shadow-color         : rgba(24, 21, 23, 0.5);
+$dark-shadow          : rgba(24, 21, 23, 0.8);
+$green                : rgb(115, 177, 52);
+$dark-green           : rgb(54, 160, 110);
+$transp-green         : rgba(104, 133, 75, 0.4);
+$orange               : rgb(243,169,128);
 
 $header__font-size: 22px;
 $header-height: 50px;

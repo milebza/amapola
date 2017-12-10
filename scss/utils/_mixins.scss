@@ -36,21 +36,10 @@
 }
 
 @mixin background-cover($position, $cover-image) {
+    background: $dark-green;
+    background: linear-gradient(-90deg, $dark-green, $orange);
     background: url($cover-image) no-repeat;
-
-    background : {
-        color: $dark-green;
-        attachment: fixed;
-        position: $position center;
-    }
-
+    background-attachment: fixed;
+    background-position: $position center;
     background-size:cover;
-}
-
-@mixin transition-color-background-color() {
-    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
-}
-
-@mixin transition-color() {
-    transition: color 200ms ease-in-out;
 }
