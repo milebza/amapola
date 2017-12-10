@@ -24,7 +24,7 @@
 	background-color: $transp-dark-yellow;
 	color: $main-black;
 	transition: border-color .15s ease-out;
-	
+
 	&:focus {
 		font-weight: 300;
 		border: 1px solid $green;
@@ -36,7 +36,8 @@
 
 .form-textarea {
 	height: auto;
-    resize: vertical;
+	padding: .75em .75em;
+  resize: vertical;
 }
 
 .form-btn {
@@ -49,7 +50,7 @@
 	padding: 15px 20px;
 	font-weight: 400;
 	transition: 200ms ease-in-out;
-	
+
 	&:hover {
 		background-color: $main-black;
 		color: $main-white;

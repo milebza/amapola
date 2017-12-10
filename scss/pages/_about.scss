@@ -2,34 +2,34 @@
 
 .about {
     @include section($main-white);
-    
+
     h1 {
         @include title;
     }
-    
+
     &__content {
         line-height: 1.7em;
         font-size: 1.1em;
 		padding: 40px 20px 70px;
-		
+
 		text-align: center;
-        
+
         @media(max-width:$max-width) {
             padding-bottom: 40px;
         }
     }
-	
+
 	&__description {
 		padding: 20px 0;
 		width: 715px;
 		margin: 0 auto;
-		
+
 		@media(max-width:$max-width) {
             width: 100%;
 			margin: 0;
         }
 	}
-	
+
 	&__round-image {
 		width: 206px;
 		height: 206px;
@@ -37,57 +37,63 @@
 		padding: 3px;
 		border: 2px solid $transp-green;
 	}
-	
+
 	&__section {
 		padding: 40px 20px 20px;
 	}
-	
+
 	&__title {
 		font: {
-			size: 1.1em;
+			size: 1.4em;
 			weight: 400;
 		}
-		text-transform: uppercase;
 		padding-bottom: 25px;
 	}
-	
+
 	&__skills {
 		@media(min-width:$max-width) {
             margin-bottom: 25px;
         }
 	}
-	
+
 	&__subtitle {
 		color: rgba(104, 133, 75, .6);
+
+    &--black {
+      color: $main-black;
+      font-size: 1.3em;
+      font-weight: 400;
+      margin-bottom: .5em;
+    }
 	}
-	
+
 	&__subcontent {
 		font-size: .9em;
 	}
-	
+
 	&__width-300 {
 		width: 300px;
 		margin: 0 auto;
-		
+
 		@media(max-width:$max-width-md) {
             width: 100%;
 			margin: 0;
         }
 	}
-	
+
 	&__link {
 		color: $main-black;
         text-decoration: none;
 		padding-bottom: 2px;
     	border-bottom: 1px solid $main-black;
 	}
-	
+
 	&__picture{
 		@media(max-width:$max-width) {
 			margin-bottom: 20px;
 		}
 	}
-	
+
 	&__frame {
 		background-color: $transp-dark-yellow;
 		border-radius: 50%;
@@ -95,13 +101,13 @@
 		height: 80px;
 		margin: 0 auto 20px;
 		box-shadow: 0px 1px 3px $shadow-color;
-		
+
 		img {
 			width: 40px;
 			margin-top:	22px;
 		}
 	}
-	
+
 	strong {
 		font-weight: 400;
 	}
