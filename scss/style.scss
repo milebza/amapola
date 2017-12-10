@@ -1,38 +1,19 @@
-/*******************
-
-    CUSTOM STYLE
-
-********************/
-
-
-/* UTILS */
-
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/form';
-
-
-/* COMPONENTS */
 
 @import 'components/toggle';
 @import 'components/x-button';
 @import 'components/carousel';
 
-/* LAYOUT */
-
 @import 'layout/header';
 @import 'layout/grid';
 @import 'layout/footer';
-
-
-/* PAGES */
 
 @import 'pages/hero';
 @import 'pages/about';
 @import 'pages/projects';
 @import 'pages/contact';
-
-/* CLASSES */
 
 @import 'utils/classes';
 
@@ -44,7 +25,7 @@ body {
     font : {
         family: 'Roboto', sans-serif;
         weight: 300;
-		color: $main-black;
+				color: $main-black;
     }
 }
 

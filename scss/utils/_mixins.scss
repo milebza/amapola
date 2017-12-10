@@ -36,9 +36,8 @@
 }
 
 @mixin background-cover($position, $cover-image) {
-    background: $dark-green;
-    background: linear-gradient(-90deg, $dark-green, $orange);
     background: url($cover-image) no-repeat;
+    background-color: $dark-green;
     background-attachment: fixed;
     background-position: $position center;
     background-size:cover;
