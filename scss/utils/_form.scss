@@ -16,12 +16,12 @@
 	width: 100%;
 	height: 2.375em;
 	outline: none;
-	border: 1px solid $transp-dark-yellow;
-	border-radius: 0;
+	border: 1px solid lighten($green, 40%);
+	border-radius: 2px;
 	padding: .375em .75em;
 	background-clip: padding-box;
 	background-clip: padding-box;
-	background-color: $transp-dark-yellow;
+	background-color: lighten($green, 40%);
 	color: $main-black;
 	transition: border-color .15s ease-out;
 

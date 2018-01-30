@@ -36,18 +36,33 @@
   }
 
   &__only-text {
-    font-family: 'Noto serif', serif;
-    font-size: 1.3em;
-    line-height: 1.3em;
+    line-height: 1.6em;
     padding: 25px 30px;
-    text-align: center;
+
+    h2 {
+      font-family: 'Noto serif', serif;
+      font-size: 2.3em;
+      line-height: 1em;
+      margin-bottom: .7em;
+      text-align: center;
+
+      @media(min-width:$max-width) {
+        font-size: 2.6em;
+      }
+    }
+    p {
+      font-size: 1.4em;
+      padding-bottom: 10px;
+      text-align: left;
+
+      @media(min-width:$max-width) {
+        text-align: justify;
+        text-indent: 50px;
+      }
+    }
 
     @media(min-width:$max-width) {
       padding: 25px 60px;
-    }
-
-    .text-bold {
-      font-weight: bold;
     }
   }
 

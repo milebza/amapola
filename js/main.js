@@ -4,6 +4,7 @@
 
 ***************************/
 
+var currentYear = new Date().getFullYear();
 
 //-----------------------
 //  Adds a bottom shadow
@@ -83,4 +84,6 @@ $(document).ready(function() {
         cssEase: 'linear',
         adaptiveHeight: true
     });
+
+    $('.js-current-year').text(currentYear);
 });

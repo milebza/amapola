@@ -34,8 +34,8 @@
 		width: 206px;
 		height: 206px;
 		border-radius: 50%;
-		padding: 3px;
-		border: 2px solid $transp-green;
+		padding: 4px;
+    border: 2px solid lighten($green, 35%);
 	}
 
 	&__section {
@@ -57,7 +57,8 @@
 	}
 
 	&__subtitle {
-		color: rgba(104, 133, 75, .6);
+    color: rgba(104, 133, 75, .6);
+    font-weight: 400;
 
     &--black {
       color: $main-black;
@@ -95,7 +96,7 @@
 	}
 
 	&__frame {
-		background-color: $transp-dark-yellow;
+    background-color: lighten($green, 35%);
 		border-radius: 50%;
 		width: 80px;
 		height: 80px;
