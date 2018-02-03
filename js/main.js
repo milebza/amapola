@@ -1,15 +1,10 @@
 /**************************
-
     JavaScript (jQuery)
-
 ***************************/
 
 var currentYear = new Date().getFullYear();
 
-//-----------------------
 //  Adds a bottom shadow
-//-----------------------
-
 function addBottomShadow() {
     if ($('.header').offset().top > 50) {
         $('.header').addClass('bottom-shadow');
@@ -21,10 +16,26 @@ function addBottomShadow() {
 $(document).ready(function() {
     $(window).scroll(addBottomShadow);
 
-    //-----------------------------
-    //  Open/close mobile menu
-    //-----------------------------
+    //  Cache window object
+    var windowObj = $(window);
 
+    //  Parallax background effect
+    $('section[data-type="js-background"]').each(function() {
+      var backgroundObj = $(this);
+
+      $(windowObj).scroll(function() {
+        //  scroll the background at var speed
+        var yPos = -(windowObj.scrollTop() / backgroundObj.data('speed'));
+        
+        //  Put together our final background position
+        var coords = 'center '+ yPos + 'px';
+
+        // Move the background
+        backgroundObj.css({ backgroundPosition: coords });
+      });
+    });
+
+    //  Open/close mobile menu
     $('.js-toggle').click(function(e) {
         e.preventDefault();
         if ($(this).hasClass('is-active') === true) {
@@ -36,11 +47,7 @@ $(document).ready(function() {
         }
     });
 
-
-    //-----------------
     //  Open carousel
-    //-----------------
-
     $('.js-projc').click(function(e) {
         e.preventDefault();
         var type = $(this).attr('data-type');
@@ -48,22 +55,14 @@ $(document).ready(function() {
         $('.js-backgr').addClass('visible');
     });
 
-
-    //-----------------
     //  Close carousel
-    //-----------------
-
     $('.js-backgr').click(function(e) {
         e.preventDefault();
         $('.js-carousel').removeClass('visible');
         $(this).removeClass('visible');
     });
 
-
-    //-----------------
     //  Scroll to page
-    //-----------------
-
     $('.js-scroll-to').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
@@ -71,11 +70,7 @@ $(document).ready(function() {
         }, 1500, 'easeInOutExpo');
     });
 
-
-    //-----------------------------
     //  Initialize slick (carousel)
-    //-----------------------------
-
     $('.js-slick').slick({
         dots: true,
         infinite: true,
@@ -85,5 +80,6 @@ $(document).ready(function() {
         adaptiveHeight: true
     });
 
+    // Set current year in footer
     $('.js-current-year').text(currentYear);
 });

@@ -35,10 +35,10 @@
     justify-content: center;
 }
 
-@mixin background-cover($position, $cover-image) {
+@mixin background-cover($positionX, $cover-image, $positionY: center) {
     background: url($cover-image) no-repeat;
     background-color: $dark-green;
     background-attachment: fixed;
-    background-position: $position center;
+    background-position: $positionX $positionY;
     background-size:cover;
 }
