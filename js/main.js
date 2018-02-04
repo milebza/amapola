@@ -16,24 +16,24 @@ function addBottomShadow() {
 $(document).ready(function() {
     $(window).scroll(addBottomShadow);
 
-    //  Cache window object
-    var windowObj = $(window);
-
-    //  Parallax background effect
-    $('section[data-type="js-background"]').each(function() {
-      var backgroundObj = $(this);
-
-      $(windowObj).scroll(function() {
-        //  scroll the background at var speed
-        var yPos = -(windowObj.scrollTop() / backgroundObj.data('speed'));
-        
-        //  Put together our final background position
-        var coords = 'center '+ yPos + 'px';
-
-        // Move the background
-        backgroundObj.css({ backgroundPosition: coords });
-      });
-    });
+    // //  Cache window object
+    // var windowObj = $(window);
+    //
+    // //  Parallax background effect
+    // $('section[data-type="js-background"]').each(function() {
+    //   var backgroundObj = $(this);
+    // 
+    //   $(windowObj).scroll(function() {
+    //     //  scroll the background at var speed
+    //     var yPos = -(windowObj.scrollTop() / backgroundObj.data('speed'));
+    //
+    //     //  Put together our final background position
+    //     var coords = 'center '+ yPos + 'px';
+    //
+    //     // Move the background
+    //     backgroundObj.css({ backgroundPosition: coords });
+    //   });
+    // });
 
     //  Open/close mobile menu
     $('.js-toggle').click(function(e) {
