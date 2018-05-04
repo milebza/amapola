@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/milebza/milebza.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^8.4.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",
     "gulp-clean-css": "^3.0.4",

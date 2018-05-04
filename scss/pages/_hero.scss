@@ -6,11 +6,11 @@
     height: 100vh;
 
     &__content {
-        padding: 33vh 20px 30px;
-        margin: 0 15px;
-        text-align: center;
-		color: $main-white;
-		font-family: Noto serif, serif;
+      padding: 33vh 20px 30px;
+      margin: 0 15px;
+      text-align: center;
+      color: $main-white;
+      font-family: Noto serif, serif;
     }
 
 	&__title {
@@ -27,4 +27,34 @@
 		font-size: 1.5em;
 		line-height: 1.5em;
 	}
+
+  &__scroll-icon {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    @media(max-width:$min-width-lg) {
+      display: none;
+    }
+  }
+
+  &__mouse {
+    border: 2px solid $main-white;
+    border-radius: 20px;
+    color: $main-white;
+    cursor: pointer;
+    height: 45px;
+    margin: 0 auto 30px;
+    position: relative;
+    width: 30px;
+  }
+
+  &__mouse-wheel {
+    animation: mouse-wheel 2.5s linear infinite;
+    background-color: $main-white;
+    height: 6px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 2px;
+  }
 }

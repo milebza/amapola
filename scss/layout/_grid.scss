@@ -94,22 +94,22 @@
 }
 
 @media screen and (max-width:$max-width) {
-    .column-1, 
-    .column-2, 
-    .column-3, 
-    .column-4, 
-    .column-5, 
-    .column-6, 
-    .column-7, 
-    .column-8, 
-    .column-9, 
-    .column-10, 
-    .column-11, 
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6,
+    .column-7,
+    .column-8,
+    .column-9,
+    .column-10,
+    .column-11,
     .column-12 {
         float: none;
         width: auto;
     }
-  
+
     .column + .column {
         margin-left: 0;
     }
@@ -122,10 +122,10 @@
 
 .container {
     padding: 20px;
-    
+
     @media(min-width:$min-width-lg) {
         margin: 0 auto;
-        width: 1300px;
+        width: 1200px;
     }
 }
 
