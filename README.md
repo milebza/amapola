@@ -1,6 +1,6 @@
-# Milena
+# Untitled
 
-A one page site that talks about me
+A one page site portfolio.
 
 ## Languages
 HTML 5, CSS 3 (Sass, BEM), JavaScript (jQuery), Gulp.
