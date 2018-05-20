@@ -1,6 +1,6 @@
 # Untitled
 
-A one page site portfolio.
+A one page portfolio.
 
 ## Languages
 HTML 5, CSS 3 (Sass, BEM), JavaScript (jQuery), Gulp.
