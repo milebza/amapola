@@ -1,4 +1,4 @@
-# amapola
+# amapola theme
 
 A one page portfolio.
 
