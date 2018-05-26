@@ -1,6 +1,8 @@
-# Untitled
+# amapola
 
 A one page portfolio.
+
+![alt tag](https://github.com/milebza/amapola/blob/master/assets/portfolio-theme.jpg)
 
 ## Languages
 HTML 5, CSS 3 (Sass, BEM), JavaScript (jQuery), Gulp.
